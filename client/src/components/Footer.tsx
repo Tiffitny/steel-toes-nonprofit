@@ -21,23 +21,23 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-blue-100 hover:text-white transition block">
-                  About Us
+                <Link href="/about">
+                  <a className="text-blue-100 hover:text-white transition">About Us</a>
                 </Link>
               </li>
               <li>
-                <Link href="/workforce" className="text-blue-100 hover:text-white transition block">
-                  Programs
+                <Link href="/workforce">
+                  <a className="text-blue-100 hover:text-white transition">Programs</a>
                 </Link>
               </li>
               <li>
-                <Link href="/partnerships" className="text-blue-100 hover:text-white transition block">
-                  Partnerships
+                <Link href="/partnerships">
+                  <a className="text-blue-100 hover:text-white transition">Partnerships</a>
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-blue-100 hover:text-white transition block">
-                  Contact
+                <Link href="/contact">
+                  <a className="text-blue-100 hover:text-white transition">Contact</a>
                 </Link>
               </li>
             </ul>
@@ -76,8 +76,8 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail size={18} />
-                <a href="mailto:Tiffany@steeltoesandsecondchances.org" className="text-blue-100 hover:text-white transition text-sm">
-                  Tiffany@steeltoesandsecondchances.org
+                <a href="mailto:info@steeltoesandchances.org" className="text-blue-100 hover:text-white transition text-sm">
+                  info@steeltoesandchances.org
                 </a>
               </div>
               <div className="flex items-center space-x-2">

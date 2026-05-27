@@ -72,8 +72,8 @@ export default function Contact() {
             <Card className="p 6 border 0 shadow md text center">
               <Mail className="h 12 w 12 text blue 900 mx auto mb 4" />
               <h3 className="text lg font bold text gray 900 mb 2">Email</h3>
-              <a href="mailto:Tiffany@steeltoesandsecondchances.org" className="text blue 900 hover:text pink 600 font semibold">
-                Tiffany@steeltoesandsecondchances.org
+              <a href="mailto:info@steeltoesandchances.org" className="text blue 900 hover:text pink 600 font semibold">
+                info@steeltoesandchances.org
               </a>
             </Card>
             <Card className="p 6 border 0 shadow md text center">

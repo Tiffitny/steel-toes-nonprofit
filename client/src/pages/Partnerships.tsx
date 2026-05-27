@@ -54,7 +54,7 @@ export default function Partnerships() {
                   <span className="text gray 700">Build your brand as a community leader</span>
                 </li>
               </ul>
-              <a href="mailto:Tiffany@steeltoesandsecondchances.org">
+              <a href="mailto:info@steeltoesandchances.org">
                 <Button className="w full bg blue 900 hover:bg blue 800">
                   Partner With Us
                 </Button>
@@ -90,7 +90,7 @@ export default function Partnerships() {
                   <span className="text gray 700">Build meaningful connections</span>
                 </li>
               </ul>
-              <a href="mailto:Tiffany@steeltoesandsecondchances.org">
+              <a href="mailto:info@steeltoesandchances.org">
                 <Button className="w full bg blue 900 hover:bg blue 800">
                   Become a Mentor
                 </Button>
@@ -164,7 +164,7 @@ export default function Partnerships() {
           <p className="text xl mb 8 text blue 100">
             Every contribution, partnership, and mentoring hour changes a young person's life.
           </p>
-          <a href="mailto:Tiffany@steeltoesandsecondchances.org">
+          <a href="mailto:info@steeltoesandchances.org">
             <Button size="lg" className="bg white text blue 900 hover:bg gray 100">
               Get in Touch
             </Button>
