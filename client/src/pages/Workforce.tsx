@@ -30,7 +30,7 @@ export default function Workforce() {
                 Our Trainable Workforce Initiative is designed to create a sustainable pipeline of skilled, certified professionals ready to excel in manufacturing and supply chain careers.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Through partnerships with Polk State College's Advanced Manufacturing Institute (AMI) and alignment with Florida's REACH Act, we ensure that training is relevant, accessible, and directly connected to employer needs.
+                We partner with leading educational institutions and employers to ensure that training is relevant, accessible, and directly connected to industry needs. Our curriculum is continuously updated to reflect the latest manufacturing technologies and best practices.
               </p>
               <Link href="/contact">
                 <Button className="bg-blue-900 hover:bg-blue-800">Get Started Today</Button>

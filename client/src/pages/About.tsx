@@ -24,13 +24,13 @@ export default function About() {
             <Card className="p-8 border-0 shadow-lg">
               <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Mission</h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                To empower individuals with the skills, knowledge, and confidence to build rewarding careers in manufacturing and supply chain industries, while strengthening Mid-Florida's industrial workforce and economic resilience.
+                To empower individuals with the skills, knowledge, and confidence to build rewarding careers in manufacturing and supply chain industries. We bridge the gap between industry needs and talent development, creating sustainable pathways to meaningful employment.
               </p>
             </Card>
             <Card className="p-8 border-0 shadow-lg">
               <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Vision</h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                A thriving Mid-Florida manufacturing ecosystem where opportunity is accessible to all, talent pipelines are robust and diverse, and industry leaders and workers grow together in partnership and mutual respect.
+                A manufacturing industry where opportunity is accessible to all, talent pipelines are robust and diverse, and industry leaders and workers grow together in partnership and mutual respect.
               </p>
             </Card>
           </div>
@@ -43,7 +43,7 @@ export default function About() {
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Our Story</h2>
           <div className="prose prose-lg max-w-4xl mx-auto text-gray-700">
             <p>
-              Steel Toes & Second Chances was born from a simple observation: Mid-Florida's manufacturing sector was growing, but the talent pipeline was shrinking. Employers struggled to find skilled workers, and many individuals—especially those facing barriers to traditional employment—had no clear path into these high-wage, stable careers.
+              Steel Toes & Second Chances was born from a simple observation: the manufacturing sector was growing, but the talent pipeline was shrinking. Employers struggled to find skilled workers, and many individuals—especially those facing barriers to traditional employment—had no clear path into these high-wage, stable careers.
             </p>
             <p>
               We recognized an opportunity to bridge this gap. By partnering with industry leaders, educational institutions, and community organizations, we created a comprehensive workforce development program that doesn't just teach skills—it transforms lives.

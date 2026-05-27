@@ -87,7 +87,7 @@ export default function Contact() {
               <MapPin className="h-12 w-12 text-blue-900 mx-auto mb-4" />
               <h3 className="text-lg font-bold text-gray-900 mb-2">Location</h3>
               <p className="text-gray-700">
-                Lakeland, FL<br />Mid-Florida Region
+                Serving the Manufacturing Industry<br />Nationwide
               </p>
             </Card>
             <Card className="p-6 border-0 shadow-md text-center">

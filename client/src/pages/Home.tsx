@@ -22,7 +22,7 @@ export default function Home() {
                 Empowering the next generation of manufacturing leaders through workforce development, training, and opportunity.
               </p>
               <p className="text-lg mb-8 text-blue-100">
-                We bridge the gap between industry needs and talent development in Mid-Florida's manufacturing ecosystem.
+                We bridge the gap between industry needs and talent development, providing comprehensive training and opportunity for the next generation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/workforce">
@@ -86,7 +86,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Steel Toes & Second Chances is dedicated to transforming lives and strengthening Mid-Florida's manufacturing workforce through innovative training programs, strategic partnerships, and genuine opportunity.
+                Steel Toes & Second Chances is dedicated to transforming lives through innovative training programs, strategic partnerships, and genuine opportunity in the manufacturing industry.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 We believe everyone deserves a second chance and the skills to succeed in a rewarding career. By connecting ambitious individuals with industry leaders, we're building a more resilient, skilled, and inclusive manufacturing ecosystem.
