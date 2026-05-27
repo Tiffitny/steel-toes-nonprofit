@@ -14,6 +14,7 @@ export default function Navigation() {
     { label: "Workforce", href: "/workforce" },
     { label: "Partnerships", href: "/partnerships" },
     { label: "Partners", href: "/partners" },
+    { label: "Founder's Message", href: "/founder-message" },
     { label: "Contact", href: "/contact" },
   ];
 
