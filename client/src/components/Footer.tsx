@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Steel Toes & Second Chances</h3>
             <p className="text-blue-100 text-sm">
-              Breaking cycles of poverty. Giving second chances. Building futures.
+              Empowering the next generation of manufacturing leaders through workforce development and opportunity.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-blue-100 hover:text-white transition"
                 >
-                  MSCA
+                  MSCA (Mid-Florida)
                 </a>
               </li>
               <li>
@@ -65,6 +65,16 @@ export default function Footer() {
                   className="text-blue-100 hover:text-white transition"
                 >
                   Forged Paths
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://polk.edu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-100 hover:text-white transition"
+                >
+                  Polk State College
                 </a>
               </li>
             </ul>
@@ -82,9 +92,15 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={18} />
-                <a href="tel:+18632096615" className="text-blue-100 hover:text-white transition text-sm">
-                  (863) 209-6615
+                <a href="tel:+18635551234" className="text-blue-100 hover:text-white transition text-sm">
+                  (863) 555-1234
                 </a>
+              </div>
+              <div className="flex items-start space-x-2">
+                <MapPin size={18} className="mt-1 flex-shrink-0" />
+                <span className="text-blue-100 text-sm">
+                  Lakeland, FL<br />Mid-Florida Region
+                </span>
               </div>
             </div>
           </div>
@@ -124,7 +140,7 @@ export default function Footer() {
         <div className="border-t border-blue-800 pt-8 text-center text-blue-100 text-sm">
           <p>&copy; {currentYear} Steel Toes & Second Chances. All rights reserved.</p>
           <p className="mt-2">
-            Breaking cycles of poverty and giving young adults second chances to build dignified futures.
+            A nonprofit organization dedicated to workforce development and opportunity in Mid-Florida.
           </p>
         </div>
       </div>

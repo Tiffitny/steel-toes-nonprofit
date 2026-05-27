@@ -14,7 +14,6 @@ export default function Navigation() {
     { label: "Workforce", href: "/workforce" },
     { label: "Partnerships", href: "/partnerships" },
     { label: "Partners", href: "/partners" },
-    { label: "Founder's Message", href: "/founder-message" },
     { label: "Contact", href: "/contact" },
   ];
 
@@ -23,18 +22,22 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 cursor-pointer">
-            <div className="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white font-bold">
-              ST
-            </div>
-            <span className="hidden sm:inline font-bold text-blue-900">Steel Toes</span>
+          <Link href="/">
+            <a className="flex items-center space-x-2 cursor-pointer">
+              <div className="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white font-bold">
+                ST
+              </div>
+              <span className="hidden sm:inline font-bold text-blue-900">Steel Toes</span>
+            </a>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-100 transition">
-                {item.label}
+              <Link key={item.href} href={item.href}>
+                <a className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-100 transition">
+                  {item.label}
+                </a>
               </Link>
             ))}
           </div>
@@ -59,13 +62,13 @@ export default function Navigation() {
         {isOpen && (
           <div className="md:hidden pb-4">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-100"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
+              <Link key={item.href} href={item.href}>
+                <a
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-100"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </a>
               </Link>
             ))}
             <div className="px-3 py-2">

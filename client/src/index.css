@@ -1,12 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@layer base {
-  :root {
-    --font-bd-supper: "BD Supper", sans-serif;
-  }
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

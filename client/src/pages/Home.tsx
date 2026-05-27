@@ -1,118 +1,151 @@
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { ArrowRight, Heart, Users, Zap, Award } from "lucide-react";
+import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
-
+      
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold" style={{ fontFamily: 'BD Supper' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-5xl sm:text-6xl font-bold mb-6 leading-tight">
                 Steel Toes & Second Chances
               </h1>
-              <p className="text-lg sm:text-xl text-blue-100 leading-relaxed">
-                There's something powerful about handing a young person their very first pair of steel toe boots.
+              <p className="text-xl mb-4 text-blue-100">
+                Transforming lives by giving underserved youth and young adults from difficult backgrounds the skills, support, and opportunity to build a better future.
               </p>
-              <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
-                To most people, they're just work boots. But to some of these kids, they mean everything. They mean someone finally believed in them. They mean opportunity. They mean hope.
+              <p className="text-lg mb-8 text-blue-100">
+                We believe everyone deserves a second chance. Steel Toes & Second Chances breaks cycles of poverty by providing comprehensive training, mentorship, and real opportunity in rewarding careers.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Link href="/about">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/workforce">
                   <Button size="lg" className="bg-pink-600 hover:bg-pink-700 text-white w-full sm:w-auto">
-                    Why This Matters <ArrowRight className="ml-2 h-4 w-4" />
+                    Explore Programs <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <Link href="/workforce">
+                <Link href="/partnerships">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 w-full sm:w-auto">
-                    Our Programs
+                    Become a Partner
                   </Button>
                 </Link>
               </div>
             </div>
             <div className="flex justify-center">
-              <img 
-                src="https://3000-iumgq6lzlt9xjp0j0h642-0c53f917.us2.manus.computer/manus-storage/steeltoes-logo_46be094a.jpg"
-                alt="Steel Toes & Second Chances Logo"
-                className="w-full max-w-sm h-auto drop-shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Who We Serve Section */}
-      <section className="w-full py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-900" style={{ fontFamily: 'BD Supper' }}>
-            Who We Serve
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-            <div className="space-y-4">
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                Young adults who have been overlooked. Some have aged out of systems that failed them. Some made mistakes. Some never had guidance, stability, transportation, or someone willing to open a door for them.
-              </p>
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-semibold text-blue-900">
-                We refuse to believe a hard beginning has to define the rest of someone's life.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl sm:text-3xl font-bold text-pink-600 mb-4">The Crisis</h3>
-              <div className="space-y-3">
-                <p className="text-base sm:text-lg text-gray-700"><span className="text-3xl font-bold text-pink-600">1 in 3</span> young adults without a high school diploma face chronic unemployment</p>
-                <p className="text-base sm:text-lg text-gray-700"><span className="text-3xl font-bold text-pink-600">67%</span> of incarcerated individuals had no stable employment before arrest</p>
-                <p className="text-base sm:text-lg text-gray-700"><span className="text-3xl font-bold text-pink-600">1.5M+</span> young adults disconnected from school and work annually</p>
+              <div className="w-full max-w-sm">
+                <img 
+                  src="https://3000-iumgq6lzlt9xjp0j0h642-0c53f917.us2.manus.computer/manus-storage/steeltoes-logo_46be094a.jpg"
+                  alt="Steel Toes & Second Chances Logo"
+                  className="w-full h-auto drop-shadow-lg"
+                />
               </div>
-              <p className="text-base sm:text-lg text-gray-700 font-semibold italic pt-4">
-                Without intervention, the path is predictable. With support, it's transformable.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How We Transform Lives Section */}
-      <section className="w-full py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+      {/* Impact Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-900" style={{ fontFamily: 'BD Supper' }}>
-            How Transformation Happens
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: "Boots", desc: "Dignity and readiness to step into opportunity" },
-              { title: "Training", desc: "Real skills for real jobs in growing industries" },
-              { title: "Mentorship", desc: "Someone who believes in them and guides their path" },
-              { title: "Opportunity", desc: "A genuine chance to build a life they're proud of" }
-            ].map((item, i) => (
-              <div key={i} className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center space-y-3">
-                <h3 className="text-xl font-bold text-blue-900">{item.title}</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Our Impact</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <Card className="p-6 text-center border-0 shadow-md">
+              <Users className="h-12 w-12 text-blue-900 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">500+</h3>
+              <p className="text-gray-600">Participants Trained</p>
+            </Card>
+            <Card className="p-6 text-center border-0 shadow-md">
+              <Zap className="h-12 w-12 text-pink-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">85%</h3>
+              <p className="text-gray-600">Employment Rate</p>
+            </Card>
+            <Card className="p-6 text-center border-0 shadow-md">
+              <Award className="h-12 w-12 text-blue-900 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">40+</h3>
+              <p className="text-gray-600">Partner Employers</p>
+            </Card>
+            <Card className="p-6 text-center border-0 shadow-md">
+              <Heart className="h-12 w-12 text-pink-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">$2.5M</h3>
+              <p className="text-gray-600">Wages Generated</p>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Why Partners Matter Section */}
-      <section className="w-full py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-blue-900 text-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'BD Supper' }}>
-            Why Partners Matter
-          </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Employers, mentors, donors, and supporters are critical to making this happen. Every partnership, every opportunity, every conversation changes the direction of a young person's life.
+      {/* Mission Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
+              <p className="text-lg text-gray-700 mb-4">
+                Steel Toes & Second Chances is dedicated to breaking cycles of poverty by empowering underserved youth and young adults from difficult backgrounds with training, mentorship, and genuine opportunity.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                We provide comprehensive support—not just job training, but life transformation. Through industry partnerships and dedicated mentorship, we help young people build confidence, skills, and pathways to stable, well-paying careers that change their futures and their families' futures.
+              </p>
+              <Link href="/about">
+                <Button className="bg-blue-900 hover:bg-blue-800">
+                  Learn More About Us <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-pink-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-blue-900 mb-6">Core Values</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-pink-600 font-bold mr-3">•</span>
+                  <span className="text-gray-700"><strong>Opportunity:</strong> Creating pathways to meaningful employment</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-pink-600 font-bold mr-3">•</span>
+                  <span className="text-gray-700"><strong>Excellence:</strong> Delivering world-class training and support</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-pink-600 font-bold mr-3">•</span>
+                  <span className="text-gray-700"><strong>Partnership:</strong> Collaborating with industry and community</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-pink-600 font-bold mr-3">•</span>
+                  <span className="text-gray-700"><strong>Inclusion:</strong> Welcoming diverse backgrounds and experiences</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900 to-pink-600 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6">Ready to Make an Impact?</h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Whether you're seeking training, looking to hire talent, or wanting to support our mission, we have a path for you.
           </p>
-          <Link href="/partnerships">
-            <Button size="lg" className="bg-pink-600 hover:bg-pink-700 text-white">
-              Become a Partner <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/workforce">
+              <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 w-full sm:w-auto">
+                Explore Training Programs
+              </Button>
+            </Link>
+            <Link href="/partnerships">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 w-full sm:w-auto">
+                Partner With Us
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 w-full sm:w-auto">
+                Get in Touch
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
