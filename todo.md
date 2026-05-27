@@ -1,91 +1,41 @@
 # Steel Toes & Second Chances Website - TODO
 
-## Core Pages & Features
+## Core Pages (All Complete)
+- [x] Home page - Hero with boots story, crisis stats (1 in 3, 67%, 1.5M+), who we serve, why partners matter
+- [x] About page - Mission/vision, barriers they face, our story, core values (NO leadership section)
+- [x] Workforce page - Holistic program (boots, training, mentorship, life skills, transportation, placement)
+- [x] Partnerships page - Steel Toes-specific opportunities (employers, mentors, donors, community)
+- [x] Partners page - Forged Paths and MSCA with descriptions and links
+- [x] Contact page - Functional form with tRPC backend and owner notifications
+- [x] Founder's Message page - Tiffany's photo, full letter, custom signature image
 
-### Home Page
-- [x] Hero section with mission statement and logo
-- [x] Overview of the organization and impact
-- [x] Call-to-action buttons (Get Involved, Learn More, Donate)
-- [x] Featured statistics/impact metrics
+## Navigation & Branding
+- [x] Navigation component (no nested anchors, mobile menu, all 7 page links)
+- [x] Footer component (correct email/phone, partner links, social media)
+- [x] BD Supper font via Google Fonts CDN
+- [x] Brand colors: Navy Blue (#1e3a5f), Pink/Magenta (#db2777), Black
+- [x] Logo uploaded to /manus-storage/steeltoes-logo_46be094a.jpg
+- [x] Founder photo at /manus-storage/tiffany_johnson_20647943.jpg
+- [x] Signature image at /manus-storage/tiffany_signature_34cf5659.png
 
-### About Page
-- [x] Organization mission and vision
-- [x] History and background
-- [x] Team/leadership section
-- [x] Core values and approach
+## Technical Features
+- [x] Database schema with contact_inquiries table
+- [x] tRPC endpoint for contact form submissions
+- [x] Owner notifications on new inquiries
+- [x] All 4 tests passing (auth logout + 3 contact tests)
+- [x] No TypeScript/build errors
+- [x] Responsive design across all pages
 
-### Workforce Development Page
-- [x] "Trainable Workforce" initiative overview
-- [x] Partnership with Polk State College AMI
-- [x] Program descriptions (Learn and Earn, certifications)
-- [x] Success stories/testimonials
-- [x] Career pathways visualization
-
-### Partnership/Sponsorship Page
-- [x] Partnership tier details (Titanium, Steel, Iron)
-- [x] Investment amounts and benefits
-- [x] ROI messaging for bank sponsors
-- [x] Application/inquiry form
-
-### Partners Page
-- [x] Forged Paths integration and link
-- [x] MSCA integration and link
-- [x] Partner logos and descriptions
-- [x] Partner testimonials
-
-### Contact & Donations Page
-- [x] Contact form
-- [x] Donation button/integration
-- [x] Newsletter signup
-- [x] Social media links
-- [x] Office location/hours
-
-### Navigation & Branding
-- [x] Responsive navigation bar with logo
-- [x] Brand colors (Navy Blue, Pink/Magenta, Black)
-- [x] Footer with links and social media
-- [x] Mobile-responsive design
-
-### Technical Features
-- [x] Database setup for contact submissions
-- [x] User authentication (if needed for admin)
-- [x] Email notifications for inquiries
-- [x] Analytics integration
-- [x] SEO optimization
-
-## Design & Styling
-- [x] Apply Steel Toes & Second Chances brand colors
-- [x] Create consistent component library
-- [x] Ensure accessibility standards
-- [x] Mobile-first responsive design
-- [x] Professional typography and spacing
-
-## Testing
-- [x] Unit tests for key components
-- [x] Form validation tests
-- [x] Navigation tests
-- [x] Responsive design testing
+## Content Rules Enforced
+- [x] Says "young adults" not "individuals"
+- [x] No employment rate or wages earned statistics (uses crisis stats)
+- [x] No Polk State College references
+- [x] No Mid-Florida or Lakeland references
+- [x] No MSCA Titanium/Steel/Iron sponsorship tiers
+- [x] No leadership section on About page
+- [x] Messaging is personal, mission-driven, about dignity and second chances
+- [x] Does NOT sound like a staffing agency
 
 ## Deployment
-- [x] Final review and QA
-- [x] Create checkpoint
-- [x] Ready to publish to production
-
-## Messaging Updates
-- [x] Update Home page: Remove "Mid-Florida" references, emphasize national/broader scope
-- [x] Update About page: Clarify bylaws mission—providing training and bridging gap between industry and talent
-- [x] Update Workforce page: Remove Polk State College, emphasize training as core mission
-- [x] Update location/contact info: Reflect broader service area
-
-## Messaging Refinement - Youth & Underserved Focus
-- [x] Update Home page: Emphasize helping underserved youth and difficult backgrounds
-- [x] Update About page: Focus on breaking cycles of poverty and transformation
-- [x] Update Workforce page: Highlight support for at-risk youth, not just job training
-- [x] Update Partnerships page: Position sponsors as supporting youth empowerment
-- [x] Reframe all language from "staffing/employment" to "life transformation and opportunity"
-
-## Terminology Updates
-- [x] Replace all "individuals" with "young adults" throughout the site
-
-## Email Notifications
-- [x] Set up email notifications for new contact form submissions (already implemented via notifyOwner)
+- [x] Domain configured: www.steeltoesandsecondchances.org
+- [x] Ready to publish

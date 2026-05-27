@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, BookOpen, Users, Briefcase, Award, TrendingUp } from "lucide-react";
+import { CheckCircle, Footprints, Users, Heart, Shield, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Workforce() {
@@ -11,201 +11,171 @@ export default function Workforce() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-bold mb-4">Empowering Young People. Changing Lives.</h1>
-          <p className="text-xl text-blue-100">
-            Comprehensive support for underserved youth: training, mentorship, life coaching, and genuine opportunity to build stable careers and break cycles of poverty.
+      <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: 'BD Supper' }}>
+            More Than a Program. A Lifeline.
+          </h1>
+          <p className="text-lg sm:text-xl text-blue-100">
+            We don't just train young adults for jobs. We walk beside them as they rebuild their confidence, discover their potential, and step into futures they once thought were impossible.
           </p>
         </div>
       </section>
 
-      {/* Overview */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      {/* What We Provide */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">More Than Training—Life Transformation</h2>
-              <p className="text-lg text-gray-700 mb-4">
-                We serve young people from underserved communities who face barriers to opportunity. Our program provides comprehensive support that goes beyond job training: mentorship, life coaching, financial literacy, emotional support, and genuine pathways to stable, well-paying careers.
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900" style={{ fontFamily: 'BD Supper' }}>
+            What We Provide
+          </h2>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12 text-base sm:text-lg">
+            Our approach is holistic. We address the whole person, not just their resume.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="p-6 border-0 shadow-md">
+              <Footprints className="h-10 w-10 text-pink-600 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'BD Supper' }}>Steel Toe Boots</h3>
+              <p className="text-gray-700 text-sm">
+                A first pair of boots represents belonging, dignity, and the start of something new. We provide them free of charge to every participant.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
-                We work with employers who share our commitment to youth empowerment and second chances. Our participants don't just get jobs—they get careers, mentors, and the support they need to succeed and build better futures for themselves and their families.
-              </p>
-              <Link href="/contact">
-                <Button className="bg-blue-900 hover:bg-blue-800">Get Started Today</Button>
-              </Link>
-            </div>
-            <div className="bg-gradient-to-br from-blue-50 to-pink-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-blue-900 mb-6">Why Choose Our Programs?</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-pink-600 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Industry-aligned curriculum and certifications</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-pink-600 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Hands-on training with modern equipment</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-pink-600 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Mentorship and career guidance</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-pink-600 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Direct job placement support</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-pink-600 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Ongoing professional development</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Training Programs */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Our Training Programs</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Program 1 */}
-            <Card className="p-6 border-0 shadow-md hover:shadow-lg transition">
-              <BookOpen className="h-12 w-12 text-blue-900 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Learn & Earn</h3>
-              <p className="text-gray-700 mb-4">
-                A progressive certification program that allows workers to build skills while earning. Participants progress through multiple certifications in manufacturing fundamentals, CNC operations, and advanced systems.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• 12-16 week modules</li>
-                <li>• Flexible scheduling</li>
-                <li>• Paid internships</li>
-              </ul>
             </Card>
-
-            {/* Program 2 */}
-            <Card className="p-6 border-0 shadow-md hover:shadow-lg transition">
-              <Briefcase className="h-12 w-12 text-pink-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Advanced Manufacturing</h3>
-              <p className="text-gray-700 mb-4">
-                For experienced workers seeking to advance their careers. This program covers advanced CNC programming, automation, quality control, and leadership skills.
+            <Card className="p-6 border-0 shadow-md">
+              <Shield className="h-10 w-10 text-blue-900 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'BD Supper' }}>Workforce Training</h3>
+              <p className="text-gray-700 text-sm">
+                Industry-aligned certifications in manufacturing, construction, logistics, and skilled trades. Real skills for real careers.
               </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• 20-24 week program</li>
-                <li>• Advanced certifications</li>
-                <li>• Leadership training</li>
-              </ul>
             </Card>
-
-            {/* Program 3 */}
-            <Card className="p-6 border-0 shadow-md hover:shadow-lg transition">
-              <TrendingUp className="h-12 w-12 text-blue-900 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Supply Chain Excellence</h3>
-              <p className="text-gray-700 mb-4">
-                Specialized training in logistics, inventory management, procurement, and supply chain optimization. Perfect for those interested in non-production roles.
+            <Card className="p-6 border-0 shadow-md">
+              <Users className="h-10 w-10 text-pink-600 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'BD Supper' }}>Mentorship</h3>
+              <p className="text-gray-700 text-sm">
+                One-on-one guidance from mentors who believe in them. Someone who shows up, listens, and walks beside them through the process.
               </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• 16-20 week program</li>
-                <li>• Industry certifications</li>
-                <li>• Real-world projects</li>
-              </ul>
+            </Card>
+            <Card className="p-6 border-0 shadow-md">
+              <Heart className="h-10 w-10 text-blue-900 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'BD Supper' }}>Life Skills</h3>
+              <p className="text-gray-700 text-sm">
+                Financial literacy, conflict resolution, communication, time management, and the soft skills that make the difference between surviving and thriving.
+              </p>
+            </Card>
+            <Card className="p-6 border-0 shadow-md">
+              <CheckCircle className="h-10 w-10 text-pink-600 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'BD Supper' }}>Transportation</h3>
+              <p className="text-gray-700 text-sm">
+                Getting to work shouldn't be the barrier. We help solve transportation challenges so young adults can show up and succeed.
+              </p>
+            </Card>
+            <Card className="p-6 border-0 shadow-md">
+              <ArrowRight className="h-10 w-10 text-blue-900 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'BD Supper' }}>Job Placement</h3>
+              <p className="text-gray-700 text-sm">
+                Direct connections to employers who believe in second chances and are committed to supporting the growth of our participants.
+              </p>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Career Pathways */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Career Pathways</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-8 border-0 shadow-md">
-              <Award className="h-12 w-12 text-blue-900 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Entry-Level to Specialist</h3>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-blue-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
-                  <span className="text-gray-700">Manufacturing Fundamentals Certification</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-blue-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
-                  <span className="text-gray-700">CNC Operations Certification</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-pink-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
-                  <span className="text-gray-700">Advanced CNC Programming</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-pink-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
-                  <span className="text-gray-700">Supervisory Leadership Track</span>
-                </div>
+      {/* The Journey */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-gray-900" style={{ fontFamily: 'BD Supper' }}>
+            The Journey
+          </h2>
+          <div className="space-y-8">
+            <div className="flex gap-4 sm:gap-6">
+              <div className="flex flex-col items-center">
+                <div className="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                <div className="w-0.5 h-full bg-pink-200 mt-2"></div>
               </div>
-            </Card>
-
-            <Card className="p-8 border-0 shadow-md">
-              <Users className="h-12 w-12 text-pink-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Support & Resources</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-pink-600 font-bold mr-3">•</span>
-                  <span>One-on-one career coaching and mentorship</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-pink-600 font-bold mr-3">•</span>
-                  <span>Job search assistance and interview prep</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-pink-600 font-bold mr-3">•</span>
-                  <span>Employer networking events and job fairs</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-pink-600 font-bold mr-3">•</span>
-                  <span>Ongoing professional development</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-pink-600 font-bold mr-3">•</span>
-                  <span>Alumni support and advancement opportunities</span>
-                </li>
-              </ul>
-            </Card>
+              <div className="pb-4">
+                <h3 className="text-xl font-bold text-blue-900 mb-2">Intake & Assessment</h3>
+                <p className="text-gray-700">We meet young adults where they are. We learn their story, their goals, and what barriers stand in their way. No judgment. Just support.</p>
+              </div>
+            </div>
+            <div className="flex gap-4 sm:gap-6">
+              <div className="flex flex-col items-center">
+                <div className="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                <div className="w-0.5 h-full bg-pink-200 mt-2"></div>
+              </div>
+              <div className="pb-4">
+                <h3 className="text-xl font-bold text-blue-900 mb-2">Boots & Training</h3>
+                <p className="text-gray-700">They receive their first pair of steel toe boots and begin hands-on training. Certifications, safety protocols, and real skills for real careers.</p>
+              </div>
+            </div>
+            <div className="flex gap-4 sm:gap-6">
+              <div className="flex flex-col items-center">
+                <div className="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                <div className="w-0.5 h-full bg-pink-200 mt-2"></div>
+              </div>
+              <div className="pb-4">
+                <h3 className="text-xl font-bold text-blue-900 mb-2">Mentorship & Life Skills</h3>
+                <p className="text-gray-700">Paired with a mentor who walks beside them. Financial literacy, conflict resolution, communication, and the confidence to keep going.</p>
+              </div>
+            </div>
+            <div className="flex gap-4 sm:gap-6">
+              <div className="flex flex-col items-center">
+                <div className="w-10 h-10 bg-blue-900 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-blue-900 mb-2">Placement & Ongoing Support</h3>
+                <p className="text-gray-700">Connected to employers who believe in second chances. But the support doesn't end at placement. We stay connected and continue walking with them.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Success Stories */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Success Stories</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-8 border-0 shadow-md">
-              <p className="text-gray-700 mb-4 italic">
-                "Steel Toes & Second Chances gave me the confidence and skills I needed to start a new career. The hands-on training and mentorship made all the difference. I'm now working as a CNC operator and earning more than I ever thought possible."
-              </p>
-              <div className="font-bold text-blue-900">— Maria, CNC Operator</div>
-            </Card>
-            <Card className="p-8 border-0 shadow-md">
-              <p className="text-gray-700 mb-4 italic">
-                "After years of struggling to find stable work, this program opened doors I didn't know existed. The job placement support was incredible, and my employer values the training I received. I'm proud of what I've accomplished."
-              </p>
-              <div className="font-bold text-blue-900">— James, Manufacturing Technician</div>
-            </Card>
+      {/* Who This Is For */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900" style={{ fontFamily: 'BD Supper' }}>
+            Who This Is For
+          </h2>
+          <p className="text-center text-gray-600 mb-10 text-base sm:text-lg">
+            If you're a young adult who's been told you don't have options, this is for you.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              "Young adults aged 16-30 facing barriers to employment",
+              "Those who have aged out of foster care",
+              "Young people with justice system involvement",
+              "Those without stable housing or transportation",
+              "Young adults without a high school diploma or GED",
+              "Anyone ready for a second chance and willing to show up"
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg">
+                <CheckCircle className="h-5 w-5 text-pink-600 flex-shrink-0 mt-0.5" />
+                <p className="text-gray-700 text-sm">{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900 to-pink-600 text-white">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900 to-pink-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Start Your Journey?</h2>
-          <p className="text-xl mb-8 text-blue-100">
-            Join hundreds of participants who have transformed their careers through our programs.
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: 'BD Supper' }}>
+            Ready to Take the First Step?
+          </h2>
+          <p className="text-lg sm:text-xl mb-8 text-blue-100">
+            Whether you're a young adult looking for opportunity, a mentor ready to give back, or an employer who believes in second chances, reach out.
           </p>
-          <Link href="/contact">
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100">
-              Enroll Now
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 w-full sm:w-auto">
+                Get Started
+              </Button>
+            </Link>
+            <Link href="/partnerships">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 w-full sm:w-auto">
+                Become a Partner
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

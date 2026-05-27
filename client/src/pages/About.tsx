@@ -8,105 +8,119 @@ export default function About() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-bold mb-4">About Steel Toes & Second Chances</h1>
-          <p className="text-xl text-blue-100">
-            Our story, mission, and commitment to transforming lives through workforce development.
+      <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: 'BD Supper' }}>
+            Why This Matters
+          </h1>
+          <p className="text-lg sm:text-xl text-blue-100">
+            Because a hard beginning should never define the rest of someone's life.
           </p>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <Card className="p-8 border-0 shadow-lg">
-              <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Mission</h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                To break cycles of poverty by empowering underserved youth and young adults from difficult backgrounds with comprehensive training, mentorship, and genuine opportunity to build stable, well-paying careers and transform their lives.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card className="p-6 sm:p-8 border-0 shadow-lg">
+              <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" style={{ fontFamily: 'BD Supper' }}>Our Mission</h2>
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                Steel Toes & Second Chances empowers underserved youth and young adults through workforce development, mentorship, life skills training, and second chance opportunities that create pathways to stability, employment, and long term success.
               </p>
             </Card>
-            <Card className="p-8 border-0 shadow-lg">
-              <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Vision</h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                A world where young people from underserved communities have genuine pathways to opportunity, where their potential is recognized and nurtured, and where they can build futures of stability, dignity, and hope for themselves and their families.
+            <Card className="p-6 sm:p-8 border-0 shadow-lg">
+              <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" style={{ fontFamily: 'BD Supper' }}>Our Vision</h2>
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                A world where every young person, regardless of their background, has access to the tools, support, and belief they need to build a life of dignity, purpose, and stability. Where second chances are not the exception but the standard.
               </p>
             </Card>
           </div>
         </div>
       </section>
 
+      {/* The Barriers */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900" style={{ fontFamily: 'BD Supper' }}>
+            The Barriers They Face
+          </h2>
+          <p className="text-center text-gray-600 mb-10 text-base sm:text-lg">
+            The young adults we serve are not broken. They have simply been overlooked.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            {[
+              "Aged out of foster care with no support system",
+              "No stable housing or transportation",
+              "No guidance, mentorship, or role models",
+              "Involvement with the justice system",
+              "Generational poverty with no visible way out",
+              "Lack of access to education or job training",
+              "No one who ever said 'you are capable'",
+              "Trauma, instability, and survival mode"
+            ].map((barrier, i) => (
+              <div key={i} className="flex items-start gap-3 p-4 bg-white rounded-lg shadow-sm">
+                <span className="text-pink-600 font-bold text-lg flex-shrink-0">&#x2022;</span>
+                <p className="text-gray-700">{barrier}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Our Story */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Our Story</h2>
-          <div className="prose prose-lg max-w-4xl mx-auto text-gray-700">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900" style={{ fontFamily: 'BD Supper' }}>
+            Our Story
+          </h2>
+          <div className="space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed">
             <p>
-              Steel Toes & Second Chances was born from a deep commitment to justice and opportunity. We saw young people from underserved communities facing systemic barriers—poverty, lack of mentorship, limited access to quality training—with no clear pathway to stable careers. Meanwhile, the manufacturing industry needed skilled workers. We recognized an opportunity to bridge this gap and transform lives.
+              Steel Toes & Second Chances was created not because these young people are broken, but because too many have simply been overlooked.
             </p>
             <p>
-              We created a comprehensive program that goes far beyond job training. We provide mentorship, life coaching, financial literacy, and emotional support. We help young people overcome trauma, build confidence, and develop the resilience they need to succeed. We connect them with employers who believe in second chances and are committed to supporting their growth.
+              We saw young adults from difficult backgrounds facing impossible barriers with no clear pathway forward. Meanwhile, industries needed skilled workers. We recognized an opportunity to bridge that gap and transform lives in the process.
             </p>
             <p>
-              The name "Steel Toes & Second Chances" reflects our core philosophy: we celebrate the strength and resilience of young people from difficult backgrounds, and we believe everyone deserves a genuine second chance. We're not just placing people in jobs—we're investing in their futures, supporting their families, and helping break generational cycles of poverty. Every young person we serve has the potential to change their life and inspire others.
+              But this is not a staffing organization. This is a movement. We provide boots, training, mentorship, transportation, life coaching, emotional support, and most importantly, belief. We walk beside young adults as they rebuild their confidence, discover their potential, and step into futures they once thought were out of reach.
+            </p>
+            <p>
+              The name says it all: Steel Toes represent the strength and resilience of these young people. Second Chances represent what every one of them deserves before the world writes them off.
             </p>
           </div>
         </div>
       </section>
 
       {/* Core Values */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Core Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-gray-900" style={{ fontFamily: 'BD Supper' }}>
+            Core Values
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-2xl font-bold text-pink-600 mb-3">Opportunity</h3>
-              <p className="text-gray-700">
-                Creating accessible pathways to meaningful, well-paying employment for all.
+              <h3 className="text-xl font-bold text-pink-600 mb-3" style={{ fontFamily: 'BD Supper' }}>Dignity</h3>
+              <p className="text-gray-700 text-sm">
+                Every young person deserves to be seen, valued, and treated with respect.
               </p>
             </Card>
             <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-2xl font-bold text-blue-900 mb-3">Excellence</h3>
-              <p className="text-gray-700">
-                Delivering world-class training, mentorship, and support to ensure success.
+              <h3 className="text-xl font-bold text-blue-900 mb-3" style={{ fontFamily: 'BD Supper' }}>Belief</h3>
+              <p className="text-gray-700 text-sm">
+                We believe in their potential before they believe in themselves.
               </p>
             </Card>
             <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-2xl font-bold text-pink-600 mb-3">Partnership</h3>
-              <p className="text-gray-700">
-                Collaborating with industry, education, and community to achieve shared goals.
+              <h3 className="text-xl font-bold text-pink-600 mb-3" style={{ fontFamily: 'BD Supper' }}>Opportunity</h3>
+              <p className="text-gray-700 text-sm">
+                Creating real pathways, not just programs, that lead to lasting change.
               </p>
             </Card>
             <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-2xl font-bold text-blue-900 mb-3">Inclusion</h3>
-              <p className="text-gray-700">
-                Welcoming diverse backgrounds, experiences, and perspectives in everything we do.
+              <h3 className="text-xl font-bold text-blue-900 mb-3" style={{ fontFamily: 'BD Supper' }}>Community</h3>
+              <p className="text-gray-700 text-sm">
+                Building stronger families and communities for generations to come.
               </p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Leadership</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-6 border-0 shadow-md text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-900 to-pink-600 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Executive Director</h3>
-              <p className="text-gray-600">Leading our mission and strategic vision</p>
-            </Card>
-            <Card className="p-6 border-0 shadow-md text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-pink-600 to-blue-900 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Program Director</h3>
-              <p className="text-gray-600">Overseeing training and participant support</p>
-            </Card>
-            <Card className="p-6 border-0 shadow-md text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-900 to-pink-600 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Partnership Manager</h3>
-              <p className="text-gray-600">Building and nurturing industry relationships</p>
             </Card>
           </div>
         </div>

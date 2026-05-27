@@ -10,6 +10,7 @@ import Workforce from "./pages/Workforce";
 import Partnerships from "./pages/Partnerships";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
+import FounderMessage from "./pages/FounderMessage";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/partnerships" component={Partnerships} />
       <Route path="/partners" component={Partners} />
       <Route path="/contact" component={Contact} />
+      <Route path="/founder-message" component={FounderMessage} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

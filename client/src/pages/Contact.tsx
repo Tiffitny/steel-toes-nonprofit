@@ -2,10 +2,11 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Clock, Loader2 } from "lucide-react";
+import { Mail, Phone, Clock, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
+import { Link } from "wouter";
 
 export default function Contact() {
   const [formData, setFormData] = useState<{
@@ -26,7 +27,7 @@ export default function Contact() {
 
   const submitMutation = trpc.contact.submit.useMutation({
     onSuccess: () => {
-      toast.success("Thank you! We received your inquiry and will respond soon.");
+      toast.success("Thank you! We received your message and will respond soon.");
       setFormData({
         name: "",
         email: "",
@@ -37,7 +38,7 @@ export default function Contact() {
       });
     },
     onError: (error) => {
-      toast.error(error.message || "Failed to submit inquiry. Please try again.");
+      toast.error(error.message || "Failed to submit. Please try again.");
     },
   });
 
@@ -56,44 +57,39 @@ export default function Contact() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-bold mb-4">Get in Touch</h1>
-          <p className="text-xl text-blue-100">
-            Have questions? Want to partner with us? We'd love to hear from you.
+      <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: 'BD Supper' }}>
+            Let's Talk
+          </h1>
+          <p className="text-lg sm:text-xl text-blue-100">
+            Whether you're a young adult looking for opportunity, a mentor ready to give back, or a partner who wants to make a difference, we want to hear from you.
           </p>
         </div>
       </section>
 
       {/* Contact Info Cards */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
             <Card className="p-6 border-0 shadow-md text-center">
-              <Mail className="h-12 w-12 text-blue-900 mx-auto mb-4" />
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Email</h3>
-              <a href="mailto:info@steeltoesandchances.org" className="text-blue-900 hover:text-pink-600 font-semibold">
-                info@steeltoesandchances.org
+              <Mail className="h-10 w-10 text-blue-900 mx-auto mb-3" />
+              <h3 className="text-base font-bold text-gray-900 mb-2">Email</h3>
+              <a href="mailto:Tiffany@steeltoesandsecondchances.org" className="text-blue-900 hover:text-pink-600 font-semibold text-sm">
+                Tiffany@steeltoesandsecondchances.org
               </a>
             </Card>
             <Card className="p-6 border-0 shadow-md text-center">
-              <Phone className="h-12 w-12 text-pink-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Phone</h3>
-              <a href="tel:+18635551234" className="text-blue-900 hover:text-pink-600 font-semibold">
-                (863) 555-1234
+              <Phone className="h-10 w-10 text-pink-600 mx-auto mb-3" />
+              <h3 className="text-base font-bold text-gray-900 mb-2">Phone</h3>
+              <a href="tel:+18632096615" className="text-blue-900 hover:text-pink-600 font-semibold text-sm">
+                (863) 209-6615
               </a>
             </Card>
             <Card className="p-6 border-0 shadow-md text-center">
-              <MapPin className="h-12 w-12 text-blue-900 mx-auto mb-4" />
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Location</h3>
-              <p className="text-gray-700">
-                Serving the Manufacturing Industry<br />Nationwide
-              </p>
-            </Card>
-            <Card className="p-6 border-0 shadow-md text-center">
-              <Clock className="h-12 w-12 text-pink-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Hours</h3>
-              <p className="text-gray-700">
+              <Clock className="h-10 w-10 text-blue-900 mx-auto mb-3" />
+              <h3 className="text-base font-bold text-gray-900 mb-2">Hours</h3>
+              <p className="text-gray-700 text-sm">
                 Mon - Fri<br />9:00 AM - 5:00 PM
               </p>
             </Card>
@@ -101,13 +97,13 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Contact Form & CTA */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      {/* Contact Form & Sidebar */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Form */}
-            <Card className="p-8 border-0 shadow-md">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+            <Card className="p-6 sm:p-8 border-0 shadow-md">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'BD Supper' }}>Send Us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-bold text-gray-900 mb-2">Name *</label>
@@ -152,11 +148,11 @@ export default function Contact() {
                     value={formData.organization}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                    placeholder="Your organization"
+                    placeholder="Your organization (if applicable)"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-gray-900 mb-2">Inquiry Type *</label>
+                  <label className="block text-sm font-bold text-gray-900 mb-2">How Can We Help? *</label>
                   <select
                     name="inquiryType"
                     value={formData.inquiryType}
@@ -164,10 +160,10 @@ export default function Contact() {
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
                   >
                     <option value="general">General Inquiry</option>
-                    <option value="training">Training Programs</option>
+                    <option value="training">I Need Training / Support</option>
                     <option value="partnership">Partnership Opportunity</option>
-                    <option value="employment">Employment</option>
-                    <option value="donation">Donation</option>
+                    <option value="employment">Employer / Hiring Partner</option>
+                    <option value="donation">Donate / Sponsor</option>
                   </select>
                 </div>
                 <div>
@@ -179,12 +175,12 @@ export default function Contact() {
                     required
                     rows={5}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                    placeholder="Tell us more about your inquiry..."
+                    placeholder="Tell us about yourself and how we can help..."
                   />
                 </div>
                 <Button 
                   type="submit" 
-                  className="w-full bg-blue-900 hover:bg-blue-800"
+                  className="w-full bg-pink-600 hover:bg-pink-700"
                   disabled={submitMutation.isPending}
                 >
                   {submitMutation.isPending ? (
@@ -199,78 +195,44 @@ export default function Contact() {
               </form>
             </Card>
 
-            {/* Sidebar CTAs */}
-            <div className="space-y-8">
-              {/* Explore Programs */}
-              <Card className="p-8 border-0 shadow-md bg-gradient-to-br from-blue-50 to-blue-100">
-                <h3 className="text-2xl font-bold text-blue-900 mb-4">Explore Our Programs</h3>
-                <p className="text-gray-700 mb-6">
-                  Interested in joining one of our training programs? Learn more about our comprehensive workforce development initiatives.
+            {/* Sidebar */}
+            <div className="space-y-6">
+              <Card className="p-6 sm:p-8 border-0 shadow-md bg-gradient-to-br from-blue-50 to-blue-100">
+                <h3 className="text-xl font-bold text-blue-900 mb-3" style={{ fontFamily: 'BD Supper' }}>For Young Adults</h3>
+                <p className="text-gray-700 mb-4 text-sm">
+                  If you're looking for training, mentorship, or a second chance, reach out. We're here for you. No judgment. Just support.
                 </p>
-                <a href="/workforce">
+                <Link href="/workforce">
                   <Button className="w-full bg-blue-900 hover:bg-blue-800">
-                    View Programs
+                    Learn About Our Programs
                   </Button>
-                </a>
+                </Link>
               </Card>
 
-              {/* Partnership Opportunities */}
-              <Card className="p-8 border-0 shadow-md bg-gradient-to-br from-pink-50 to-pink-100">
-                <h3 className="text-2xl font-bold text-blue-900 mb-4">Strategic Partnerships</h3>
-                <p className="text-gray-700 mb-6">
-                  Ready to invest in workforce development? Explore our exclusive partnership tiers and secure your position as an industry leader.
+              <Card className="p-6 sm:p-8 border-0 shadow-md bg-gradient-to-br from-pink-50 to-pink-100">
+                <h3 className="text-xl font-bold text-blue-900 mb-3" style={{ fontFamily: 'BD Supper' }}>For Partners & Donors</h3>
+                <p className="text-gray-700 mb-4 text-sm">
+                  Ready to make a difference? Whether you can offer employment, mentorship, or financial support, every contribution changes a life.
                 </p>
-                <a href="/partnerships">
+                <Link href="/partnerships">
                   <Button className="w-full bg-pink-600 hover:bg-pink-700">
-                    Learn About Partnerships
+                    Partnership Opportunities
                   </Button>
-                </a>
+                </Link>
               </Card>
 
-              {/* Support Our Mission */}
-              <Card className="p-8 border-0 shadow-md bg-gradient-to-br from-gray-50 to-gray-100">
-                <h3 className="text-2xl font-bold text-blue-900 mb-4">Support Our Mission</h3>
-                <p className="text-gray-700 mb-6">
-                  Your donation helps us provide training, mentorship, and opportunity to young adults seeking to transform their lives.
+              <Card className="p-6 sm:p-8 border-0 shadow-md bg-gradient-to-br from-gray-50 to-gray-100">
+                <h3 className="text-xl font-bold text-blue-900 mb-3" style={{ fontFamily: 'BD Supper' }}>Read Our Story</h3>
+                <p className="text-gray-700 mb-4 text-sm">
+                  Learn why Tiffany Johnson founded Steel Toes & Second Chances and what drives this mission every day.
                 </p>
-                <Button className="w-full bg-blue-900 hover:bg-blue-800">
-                  Make a Donation
-                </Button>
+                <Link href="/founder-message">
+                  <Button variant="outline" className="w-full border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white">
+                    Founder's Message
+                  </Button>
+                </Link>
               </Card>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-lg font-bold text-blue-900 mb-2">How do I apply for a training program?</h3>
-              <p className="text-gray-700">
-                Contact us via email or phone to discuss your background and goals. We'll help match you with the right program and guide you through the application process.
-              </p>
-            </Card>
-            <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-lg font-bold text-blue-900 mb-2">What are the program costs?</h3>
-              <p className="text-gray-700">
-                Most of our programs are subsidized or free for eligible participants. We work with various funding sources to make training accessible.
-              </p>
-            </Card>
-            <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-lg font-bold text-blue-900 mb-2">How long are the programs?</h3>
-              <p className="text-gray-700">
-                Program lengths vary from 12 to 24 weeks depending on the track. We offer flexible scheduling to accommodate working young adults.
-              </p>
-            </Card>
-            <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-lg font-bold text-blue-900 mb-2">What job placement support do you provide?</h3>
-              <p className="text-gray-700">
-                We provide comprehensive job search assistance, interview preparation, employer connections, and ongoing career support to ensure your success.
-              </p>
-            </Card>
           </div>
         </div>
       </section>

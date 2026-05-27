@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Facebook, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Linkedin, Twitter, Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,12 +7,12 @@ export default function Footer() {
   return (
     <footer className="bg-blue-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About */}
           <div>
             <h3 className="text-lg font-bold mb-4">Steel Toes & Second Chances</h3>
-            <p className="text-blue-100 text-sm">
-              Empowering the next generation of manufacturing leaders through workforce development and opportunity.
+            <p className="text-blue-100 text-sm leading-relaxed">
+              Breaking cycles of poverty. Giving second chances. Building futures.
             </p>
           </div>
 
@@ -21,23 +21,28 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about">
-                  <a className="text-blue-100 hover:text-white transition">About Us</a>
+                <Link href="/about" className="text-blue-100 hover:text-white transition text-sm">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/workforce">
-                  <a className="text-blue-100 hover:text-white transition">Programs</a>
+                <Link href="/workforce" className="text-blue-100 hover:text-white transition text-sm">
+                  Programs
                 </Link>
               </li>
               <li>
-                <Link href="/partnerships">
-                  <a className="text-blue-100 hover:text-white transition">Partnerships</a>
+                <Link href="/partnerships" className="text-blue-100 hover:text-white transition text-sm">
+                  Partnerships
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a className="text-blue-100 hover:text-white transition">Contact</a>
+                <Link href="/founder-message" className="text-blue-100 hover:text-white transition text-sm">
+                  Founder's Message
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-blue-100 hover:text-white transition text-sm">
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -52,9 +57,9 @@ export default function Footer() {
                   href="https://mscafl.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-100 hover:text-white transition"
+                  className="text-blue-100 hover:text-white transition text-sm"
                 >
-                  MSCA (Mid-Florida)
+                  MSCA
                 </a>
               </li>
               <li>
@@ -62,19 +67,9 @@ export default function Footer() {
                   href="https://forgedpaths.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-100 hover:text-white transition"
+                  className="text-blue-100 hover:text-white transition text-sm"
                 >
                   Forged Paths
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://polk.edu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-100 hover:text-white transition"
-                >
-                  Polk State College
                 </a>
               </li>
             </ul>
@@ -85,22 +80,16 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <Mail size={18} />
-                <a href="mailto:info@steeltoesandchances.org" className="text-blue-100 hover:text-white transition text-sm">
-                  info@steeltoesandchances.org
+                <Mail size={16} className="flex-shrink-0" />
+                <a href="mailto:Tiffany@steeltoesandsecondchances.org" className="text-blue-100 hover:text-white transition text-sm">
+                  Tiffany@steeltoesandsecondchances.org
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone size={18} />
-                <a href="tel:+18635551234" className="text-blue-100 hover:text-white transition text-sm">
-                  (863) 555-1234
+                <Phone size={16} className="flex-shrink-0" />
+                <a href="tel:+18632096615" className="text-blue-100 hover:text-white transition text-sm">
+                  (863) 209-6615
                 </a>
-              </div>
-              <div className="flex items-start space-x-2">
-                <MapPin size={18} className="mt-1 flex-shrink-0" />
-                <span className="text-blue-100 text-sm">
-                  Lakeland, FL<br />Mid-Florida Region
-                </span>
               </div>
             </div>
           </div>
@@ -110,7 +99,7 @@ export default function Footer() {
         <div className="border-t border-blue-800 pt-8 mb-8">
           <div className="flex justify-center space-x-6">
             <a
-              href="https://facebook.com/steeltoesandchances"
+              href="https://facebook.com/steeltoesandsecondchances"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-100 hover:text-white transition"
@@ -126,7 +115,7 @@ export default function Footer() {
               <Linkedin size={24} />
             </a>
             <a
-              href="https://twitter.com/steeltoesfl"
+              href="https://twitter.com/steeltoesandsecondchances"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-100 hover:text-white transition"
@@ -140,7 +129,7 @@ export default function Footer() {
         <div className="border-t border-blue-800 pt-8 text-center text-blue-100 text-sm">
           <p>&copy; {currentYear} Steel Toes & Second Chances. All rights reserved.</p>
           <p className="mt-2">
-            A nonprofit organization dedicated to workforce development and opportunity in Mid-Florida.
+            Breaking cycles of poverty. Giving second chances. Building futures.
           </p>
         </div>
       </div>
