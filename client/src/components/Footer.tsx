@@ -5,13 +5,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-blue-900 text-white w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <footer className="bg-blue-900 text-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About */}
           <div>
             <h3 className="text-lg font-bold mb-4">Steel Toes & Second Chances</h3>
-            <p className="text-blue-100 text-sm leading-relaxed">
+            <p className="text-blue-100 text-sm">
               Breaking cycles of poverty. Giving second chances. Building futures.
             </p>
           </div>
@@ -21,23 +21,23 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-blue-100 hover:text-white transition">
-                  About Us
+                <Link href="/about">
+                  <a className="text-blue-100 hover:text-white transition">About Us</a>
                 </Link>
               </li>
               <li>
-                <Link href="/workforce" className="text-blue-100 hover:text-white transition">
-                  Programs
+                <Link href="/workforce">
+                  <a className="text-blue-100 hover:text-white transition">Programs</a>
                 </Link>
               </li>
               <li>
-                <Link href="/partnerships" className="text-blue-100 hover:text-white transition">
-                  Partnerships
+                <Link href="/partnerships">
+                  <a className="text-blue-100 hover:text-white transition">Partnerships</a>
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-blue-100 hover:text-white transition">
-                  Contact
+                <Link href="/contact">
+                  <a className="text-blue-100 hover:text-white transition">Contact</a>
                 </Link>
               </li>
             </ul>
@@ -70,45 +70,62 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Contact</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <a href="tel:863-209-6615" className="text-blue-100 hover:text-white transition text-sm">
+            <h4 className="text-lg font-bold mb-4">Contact Us</h4>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-2">
+                <Mail size={18} />
+                <a href="mailto:info@steeltoesandchances.org" className="text-blue-100 hover:text-white transition text-sm">
+                  info@steeltoesandchances.org
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone size={18} />
+                <a href="tel:+18632096615" className="text-blue-100 hover:text-white transition text-sm">
                   (863) 209-6615
                 </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <a href="mailto:Tiffany@steeltoesandsecondchances.org" className="text-blue-100 hover:text-white transition text-sm break-all">
-                  Tiffany@steeltoesandsecondchances.org
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-blue-800 py-8">
-          {/* Social Links */}
-          <div className="flex justify-center gap-6 mb-6">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-white transition">
-              <Facebook className="h-6 w-6" />
+        {/* Social Media */}
+        <div className="border-t border-blue-800 pt-8 mb-8">
+          <div className="flex justify-center space-x-6">
+            <a
+              href="https://facebook.com/steeltoesandchances"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-100 hover:text-white transition"
+            >
+              <Facebook size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-white transition">
-              <Linkedin className="h-6 w-6" />
+            <a
+              href="https://linkedin.com/company/steel-toes-and-second-chances"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-100 hover:text-white transition"
+            >
+              <Linkedin size={24} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-white transition">
-              <Twitter className="h-6 w-6" />
+            <a
+              href="https://twitter.com/steeltoesfl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-100 hover:text-white transition"
+            >
+              <Twitter size={24} />
             </a>
           </div>
+        </div>
 
-          {/* Copyright */}
-          <div className="text-center text-blue-100 text-sm">
-            <p>&copy; {currentYear} Steel Toes & Second Chances. All rights reserved.</p>
-          </div>
+        {/* Copyright */}
+        <div className="border-t border-blue-800 pt-8 text-center text-blue-100 text-sm">
+          <p>&copy; {currentYear} Steel Toes & Second Chances. All rights reserved.</p>
+          <p className="mt-2">
+            Breaking cycles of poverty and giving young adults second chances to build dignified futures.
+          </p>
         </div>
       </div>
     </footer>
