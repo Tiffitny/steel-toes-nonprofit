@@ -76,3 +76,10 @@
 - [x] Update About page: Clarify bylaws mission—providing training and bridging gap between industry and talent
 - [x] Update Workforce page: Remove Polk State College, emphasize training as core mission
 - [x] Update location/contact info: Reflect broader service area
+
+## Messaging Refinement - Youth & Underserved Focus
+- [x] Update Home page: Emphasize helping underserved youth and difficult backgrounds
+- [x] Update About page: Focus on breaking cycles of poverty and transformation
+- [x] Update Workforce page: Highlight support for at-risk youth, not just job training
+- [x] Update Partnerships page: Position sponsors as supporting youth empowerment
+- [x] Reframe all language from "staffing/employment" to "life transformation and opportunity"

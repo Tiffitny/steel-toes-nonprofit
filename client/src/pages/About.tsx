@@ -24,13 +24,13 @@ export default function About() {
             <Card className="p-8 border-0 shadow-lg">
               <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Mission</h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                To empower individuals with the skills, knowledge, and confidence to build rewarding careers in manufacturing and supply chain industries. We bridge the gap between industry needs and talent development, creating sustainable pathways to meaningful employment.
+                To break cycles of poverty by empowering underserved youth and individuals from difficult backgrounds with comprehensive training, mentorship, and genuine opportunity to build stable, well-paying careers and transform their lives.
               </p>
             </Card>
             <Card className="p-8 border-0 shadow-lg">
               <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Vision</h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                A manufacturing industry where opportunity is accessible to all, talent pipelines are robust and diverse, and industry leaders and workers grow together in partnership and mutual respect.
+                A world where young people from underserved communities have genuine pathways to opportunity, where their potential is recognized and nurtured, and where they can build futures of stability, dignity, and hope for themselves and their families.
               </p>
             </Card>
           </div>
@@ -43,13 +43,13 @@ export default function About() {
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Our Story</h2>
           <div className="prose prose-lg max-w-4xl mx-auto text-gray-700">
             <p>
-              Steel Toes & Second Chances was born from a simple observation: the manufacturing sector was growing, but the talent pipeline was shrinking. Employers struggled to find skilled workers, and many individuals—especially those facing barriers to traditional employment—had no clear path into these high-wage, stable careers.
+              Steel Toes & Second Chances was born from a deep commitment to justice and opportunity. We saw young people from underserved communities facing systemic barriers—poverty, lack of mentorship, limited access to quality training—with no clear pathway to stable careers. Meanwhile, the manufacturing industry needed skilled workers. We recognized an opportunity to bridge this gap and transform lives.
             </p>
             <p>
-              We recognized an opportunity to bridge this gap. By partnering with industry leaders, educational institutions, and community organizations, we created a comprehensive workforce development program that doesn't just teach skills—it transforms lives.
+              We created a comprehensive program that goes far beyond job training. We provide mentorship, life coaching, financial literacy, and emotional support. We help young people overcome trauma, build confidence, and develop the resilience they need to succeed. We connect them with employers who believe in second chances and are committed to supporting their growth.
             </p>
             <p>
-              The name "Steel Toes & Second Chances" reflects our core philosophy: we celebrate the strength and resilience of manufacturing workers, and we believe everyone deserves a second chance to build a better future. Whether someone is entering the workforce for the first time or pivoting after a setback, we're here to support their journey.
+              The name "Steel Toes & Second Chances" reflects our core philosophy: we celebrate the strength and resilience of young people from difficult backgrounds, and we believe everyone deserves a genuine second chance. We're not just placing people in jobs—we're investing in their futures, supporting their families, and helping break generational cycles of poverty. Every young person we serve has the potential to change their life and inspire others.
             </p>
           </div>
         </div>

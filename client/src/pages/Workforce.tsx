@@ -13,9 +13,9 @@ export default function Workforce() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-bold mb-4">Trainable Workforce Initiative</h1>
+          <h1 className="text-5xl font-bold mb-4">Empowering Young People. Changing Lives.</h1>
           <p className="text-xl text-blue-100">
-            Building the next generation of manufacturing leaders through comprehensive training and support.
+            Comprehensive support for underserved youth: training, mentorship, life coaching, and genuine opportunity to build stable careers and break cycles of poverty.
           </p>
         </div>
       </section>
@@ -25,12 +25,12 @@ export default function Workforce() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">Empowering Talent for Industry Success</h2>
+              <h2 className="text-4xl font-bold mb-6 text-gray-900">More Than Training—Life Transformation</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Our Trainable Workforce Initiative is designed to create a sustainable pipeline of skilled, certified professionals ready to excel in manufacturing and supply chain careers.
+                We serve young people from underserved communities who face barriers to opportunity. Our program provides comprehensive support that goes beyond job training: mentorship, life coaching, financial literacy, emotional support, and genuine pathways to stable, well-paying careers.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                We partner with leading educational institutions and employers to ensure that training is relevant, accessible, and directly connected to industry needs. Our curriculum is continuously updated to reflect the latest manufacturing technologies and best practices.
+                We work with employers who share our commitment to youth empowerment and second chances. Our participants don't just get jobs—they get careers, mentors, and the support they need to succeed and build better futures for themselves and their families.
               </p>
               <Link href="/contact">
                 <Button className="bg-blue-900 hover:bg-blue-800">Get Started Today</Button>

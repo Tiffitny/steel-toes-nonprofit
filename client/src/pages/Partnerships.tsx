@@ -66,9 +66,9 @@ export default function Partnerships() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-bold mb-4">Strategic Partnership Program</h1>
+          <h1 className="text-5xl font-bold mb-4">Partner With Us. Change Lives.</h1>
           <p className="text-xl text-blue-100">
-            Exclusive opportunities to invest in Mid-Florida's manufacturing future and position your organization as an industry leader.
+            Join us in breaking cycles of poverty by investing in underserved youth. Your partnership directly empowers young people from difficult backgrounds to build stable careers and transform their lives.
           </p>
         </div>
       </section>
@@ -79,21 +79,21 @@ export default function Partnerships() {
           <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">Why Partner With Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Exclusive Access</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-3">Make Real Impact</h3>
               <p className="text-gray-700">
-                Only one slot per tier per category. Your investment guarantees maximum visibility and competitive advantage.
+                Your investment directly changes lives by providing underserved youth with training, mentorship, and genuine pathways to stable careers. You are transforming futures.
               </p>
             </Card>
             <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Direct ROI</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-3">Build Loyal Talent</h3>
               <p className="text-gray-700">
-                Access to a highly qualified, targeted customer base—manufacturing decision-makers of Mid-Florida.
+                Young people who receive mentorship and genuine support become committed employees. You gain access to motivated talent who understand the value of opportunity.
               </p>
             </Card>
             <Card className="p-6 border-0 shadow-md">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Year-Round Engagement</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-3">Strengthen Community</h3>
               <p className="text-gray-700">
-                This is not a one-time event sponsorship. It's a comprehensive platform for continuous business development.
+                Be recognized as a leader in youth empowerment and social responsibility. Demonstrate your commitment to breaking cycles of poverty and building stronger communities.
               </p>
             </Card>
           </div>

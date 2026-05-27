@@ -19,10 +19,10 @@ export default function Home() {
                 Steel Toes & Second Chances
               </h1>
               <p className="text-xl mb-4 text-blue-100">
-                Empowering the next generation of manufacturing leaders through workforce development, training, and opportunity.
+                Transforming lives by giving underserved youth and individuals from difficult backgrounds the skills, support, and opportunity to build a better future.
               </p>
               <p className="text-lg mb-8 text-blue-100">
-                We bridge the gap between industry needs and talent development, providing comprehensive training and opportunity for the next generation.
+                We believe everyone deserves a second chance. Steel Toes & Second Chances breaks cycles of poverty by providing comprehensive training, mentorship, and real opportunity in rewarding careers.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/workforce">
@@ -86,10 +86,10 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Steel Toes & Second Chances is dedicated to transforming lives through innovative training programs, strategic partnerships, and genuine opportunity in the manufacturing industry.
+                Steel Toes & Second Chances is dedicated to breaking cycles of poverty by empowering underserved youth and individuals from difficult backgrounds with training, mentorship, and genuine opportunity.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                We believe everyone deserves a second chance and the skills to succeed in a rewarding career. By connecting ambitious individuals with industry leaders, we're building a more resilient, skilled, and inclusive manufacturing ecosystem.
+                We provide comprehensive support—not just job training, but life transformation. Through industry partnerships and dedicated mentorship, we help young people build confidence, skills, and pathways to stable, well-paying careers that change their futures and their families' futures.
               </p>
               <Link href="/about">
                 <Button className="bg-blue-900 hover:bg-blue-800">
