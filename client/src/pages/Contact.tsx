@@ -2,11 +2,20 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Loader2 } from "lucide-react";
 import { useState } from "react";
+import { trpc } from "@/lib/trpc";
+import { toast } from "sonner";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    name: string;
+    email: string;
+    phone: string;
+    organization: string;
+    inquiryType: "general" | "training" | "partnership" | "employment" | "donation";
+    message: string;
+  }>({
     name: "",
     email: "",
     phone: "",
@@ -15,7 +24,22 @@ export default function Contact() {
     message: "",
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const submitMutation = trpc.contact.submit.useMutation({
+    onSuccess: () => {
+      toast.success("Thank you! We received your inquiry and will respond soon.");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        organization: "",
+        inquiryType: "general" as const,
+        message: "",
+      });
+    },
+    onError: (error) => {
+      toast.error(error.message || "Failed to submit inquiry. Please try again.");
+    },
+  });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -24,20 +48,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send data to a server
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        organization: "",
-        inquiryType: "general",
-        message: "",
-      });
-      setSubmitted(false);
-    }, 3000);
+    submitMutation.mutate(formData);
   };
 
   return (
@@ -97,91 +108,95 @@ export default function Contact() {
             {/* Contact Form */}
             <Card className="p-8 border-0 shadow-md">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-              {submitted ? (
-                <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6 text-center">
-                  <p className="text-green-800 font-bold text-lg">Thank you for reaching out!</p>
-                  <p className="text-green-700 mt-2">We'll get back to you as soon as possible.</p>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-sm font-bold text-gray-900 mb-2">Name *</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    placeholder="Your name"
+                  />
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-bold text-gray-900 mb-2">Name *</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-900 mb-2">Email *</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-900 mb-2">Phone</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                      placeholder="(555) 123-4567"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-900 mb-2">Organization</label>
-                    <input
-                      type="text"
-                      name="organization"
-                      value={formData.organization}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                      placeholder="Your organization"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-900 mb-2">Inquiry Type *</label>
-                    <select
-                      name="inquiryType"
-                      value={formData.inquiryType}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                    >
-                      <option value="general">General Inquiry</option>
-                      <option value="training">Training Programs</option>
-                      <option value="partnership">Partnership Opportunity</option>
-                      <option value="employment">Employment</option>
-                      <option value="donation">Donation</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-900 mb-2">Message *</label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={5}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                      placeholder="Tell us more about your inquiry..."
-                    />
-                  </div>
-                  <Button type="submit" className="w-full bg-blue-900 hover:bg-blue-800">
-                    Send Message
-                  </Button>
-                </form>
-              )}
+                <div>
+                  <label className="block text-sm font-bold text-gray-900 mb-2">Email *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-900 mb-2">Phone</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    placeholder="(555) 123-4567"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-900 mb-2">Organization</label>
+                  <input
+                    type="text"
+                    name="organization"
+                    value={formData.organization}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    placeholder="Your organization"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-900 mb-2">Inquiry Type *</label>
+                  <select
+                    name="inquiryType"
+                    value={formData.inquiryType}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+                  >
+                    <option value="general">General Inquiry</option>
+                    <option value="training">Training Programs</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="employment">Employment</option>
+                    <option value="donation">Donation</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-900 mb-2">Message *</label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    rows={5}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    placeholder="Tell us more about your inquiry..."
+                  />
+                </div>
+                <Button 
+                  type="submit" 
+                  className="w-full bg-blue-900 hover:bg-blue-800"
+                  disabled={submitMutation.isPending}
+                >
+                  {submitMutation.isPending ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    "Send Message"
+                  )}
+                </Button>
+              </form>
             </Card>
 
             {/* Sidebar CTAs */}
