@@ -76,8 +76,8 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail size={18} />
-                <a href="mailto:info@steeltoesandchances.org" className="text-blue-100 hover:text-white transition text-sm">
-                  info@steeltoesandchances.org
+                <a href="mailto:Tiffany@steeltoesandsecondchances.org" className="text-blue-100 hover:text-white transition text-sm">
+                  Tiffany@steeltoesandsecondchances.org
                 </a>
               </div>
               <div className="flex items-center space-x-2">

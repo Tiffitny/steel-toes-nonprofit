@@ -184,7 +184,7 @@ export default function Partners() {
           <p className="text xl mb 8 text blue 100">
             We're always looking for organizations and partners who share our mission to transform lives and empower young adults.
           </p>
-          <a href="mailto:info@steeltoesandchances.org">
+          <a href="mailto:Tiffany@steeltoesandsecondchances.org">
             <Button size="lg" className="bg white text blue 900 hover:bg gray 100">
               Get in Touch
             </Button>
