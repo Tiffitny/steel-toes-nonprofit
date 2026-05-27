@@ -24,7 +24,7 @@ export default function About() {
             <Card className="p-8 border-0 shadow-lg">
               <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Mission</h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                To break cycles of poverty by empowering underserved youth and individuals from difficult backgrounds with comprehensive training, mentorship, and genuine opportunity to build stable, well-paying careers and transform their lives.
+                To break cycles of poverty by empowering underserved youth and young adults from difficult backgrounds with comprehensive training, mentorship, and genuine opportunity to build stable, well-paying careers and transform their lives.
               </p>
             </Card>
             <Card className="p-8 border-0 shadow-lg">

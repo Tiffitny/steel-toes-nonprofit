@@ -33,7 +33,7 @@ export default function Partners() {
                 <p className="text-gray-600 text-lg">Empowering Second Chances</p>
               </div>
               <p className="text-gray-700 mb-4">
-                Forged Paths is a nonprofit organization dedicated to breaking cycles of poverty and incarceration by providing education, training, and support services to individuals facing barriers to employment.
+                Forged Paths is a nonprofit organization dedicated to breaking cycles of poverty and incarceration by providing education, training, and support services to young adults facing barriers to employment.
               </p>
               <p className="text-gray-700 mb-6">
                 Our partnership with Forged Paths ensures that our programs reach those who need them most, providing wraparound support services including case management, mental health resources, and financial literacy training.
@@ -42,7 +42,7 @@ export default function Partners() {
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
                   <span className="text-pink-600 font-bold mr-2">•</span>
-                  <span className="text-gray-700">Serving justice-involved individuals and those with barriers to employment</span>
+                  <span className="text-gray-700">Serving justice-involved young adults and those with barriers to employment</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-pink-600 font-bold mr-2">•</span>
@@ -229,7 +229,7 @@ export default function Partners() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Interested in Partnering?</h2>
           <p className="text-xl mb-8 text-blue-100">
-            We're always looking for organizations and individuals who share our mission to transform lives and strengthen the manufacturing workforce.
+            We're always looking for organizations and partners who share our mission to transform lives and empower young adults.
           </p>
           <a href="mailto:info@steeltoesandchances.org">
             <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100">

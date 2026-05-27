@@ -69,7 +69,7 @@
 ## Deployment
 - [x] Final review and QA
 - [x] Create checkpoint
-- [x] Publish to production
+- [x] Ready to publish to production
 
 ## Messaging Updates
 - [x] Update Home page: Remove "Mid-Florida" references, emphasize national/broader scope
@@ -83,3 +83,9 @@
 - [x] Update Workforce page: Highlight support for at-risk youth, not just job training
 - [x] Update Partnerships page: Position sponsors as supporting youth empowerment
 - [x] Reframe all language from "staffing/employment" to "life transformation and opportunity"
+
+## Terminology Updates
+- [x] Replace all "individuals" with "young adults" throughout the site
+
+## Email Notifications
+- [x] Set up email notifications for new contact form submissions (already implemented via notifyOwner)

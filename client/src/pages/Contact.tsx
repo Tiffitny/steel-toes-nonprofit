@@ -231,7 +231,7 @@ export default function Contact() {
               <Card className="p-8 border-0 shadow-md bg-gradient-to-br from-gray-50 to-gray-100">
                 <h3 className="text-2xl font-bold text-blue-900 mb-4">Support Our Mission</h3>
                 <p className="text-gray-700 mb-6">
-                  Your donation helps us provide training, mentorship, and opportunity to individuals seeking to transform their lives.
+                  Your donation helps us provide training, mentorship, and opportunity to young adults seeking to transform their lives.
                 </p>
                 <Button className="w-full bg-blue-900 hover:bg-blue-800">
                   Make a Donation
@@ -262,7 +262,7 @@ export default function Contact() {
             <Card className="p-6 border-0 shadow-md">
               <h3 className="text-lg font-bold text-blue-900 mb-2">How long are the programs?</h3>
               <p className="text-gray-700">
-                Program lengths vary from 12 to 24 weeks depending on the track. We offer flexible scheduling to accommodate working individuals.
+                Program lengths vary from 12 to 24 weeks depending on the track. We offer flexible scheduling to accommodate working young adults.
               </p>
             </Card>
             <Card className="p-6 border-0 shadow-md">

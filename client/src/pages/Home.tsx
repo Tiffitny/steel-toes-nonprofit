@@ -19,7 +19,7 @@ export default function Home() {
                 Steel Toes & Second Chances
               </h1>
               <p className="text-xl mb-4 text-blue-100">
-                Transforming lives by giving underserved youth and individuals from difficult backgrounds the skills, support, and opportunity to build a better future.
+                Transforming lives by giving underserved youth and young adults from difficult backgrounds the skills, support, and opportunity to build a better future.
               </p>
               <p className="text-lg mb-8 text-blue-100">
                 We believe everyone deserves a second chance. Steel Toes & Second Chances breaks cycles of poverty by providing comprehensive training, mentorship, and real opportunity in rewarding careers.
@@ -86,7 +86,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Steel Toes & Second Chances is dedicated to breaking cycles of poverty by empowering underserved youth and individuals from difficult backgrounds with training, mentorship, and genuine opportunity.
+                Steel Toes & Second Chances is dedicated to breaking cycles of poverty by empowering underserved youth and young adults from difficult backgrounds with training, mentorship, and genuine opportunity.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 We provide comprehensive support—not just job training, but life transformation. Through industry partnerships and dedicated mentorship, we help young people build confidence, skills, and pathways to stable, well-paying careers that change their futures and their families' futures.
