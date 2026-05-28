@@ -178,7 +178,7 @@ export default function FounderMessage() {
                   {/* Signature */}
                   <div className="pt-8 mt-8 border-t border-gray-100">
                     <img
-                      src="/manus-storage/tiffany_signature_v2_b09d51a8.png"
+                      src="/manus-storage/tiffany_signature_v3_2a585e6b.png"
                       alt="Tiffany Johnson signature"
                       className="h-16 sm:h-20 w-auto mb-2"
                     />
