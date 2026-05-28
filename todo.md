@@ -54,3 +54,6 @@
 - [x] Update Footer with modern design
 - [x] Ensure all animations respect prefers-reduced-motion
 - [x] Custom cursor using Steel Toes heart logo
+- [x] Boot favicon in browser tab
+- [x] Boot loading animation on mobile page load
+- [x] Boot touch ripple effect on mobile tap

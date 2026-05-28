@@ -11,6 +11,7 @@ import Partnerships from "./pages/Partnerships";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
 import FounderMessage from "./pages/FounderMessage";
+import BootEffects from "./components/BootEffects";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -44,6 +45,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
+          <BootEffects />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
