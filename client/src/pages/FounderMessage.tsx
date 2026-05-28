@@ -81,11 +81,15 @@ export default function FounderMessage() {
                 <div className="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-gray-100">
                   <div className="space-y-6">
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      There's something powerful about handing a young person their very first pair of steel toe boots.
+                      I want to tell you about a moment I will never forget.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      To most people, they're just work boots.
+                      A young man walked into our program with his head down, wearing shoes held together with tape. He was 19 years old. He had aged out of foster care six months earlier with nothing. No family to call. No bed to sleep in. No one checking on him. He told me he had been sleeping in his car for weeks, and that he had applied to 47 jobs and heard back from none of them.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      When I handed him his first pair of steel toe boots, he just stared at them. Then he looked up at me and said:
                     </p>
 
                     <motion.p
@@ -95,15 +99,19 @@ export default function FounderMessage() {
                       transition={{ duration: 0.5 }}
                       className="text-[#0f1b2d] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#e91e8c]"
                     >
-                      But to some of these kids, they mean everything.
+                      "No one has ever given me anything and expected me to succeed before."
                     </motion.p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      They mean someone finally believed in them enough to invest in their future. They mean a chance to walk onto a jobsite with dignity, purpose, and the confidence to stand a little taller. For many of the young people we work with, nobody has ever looked them in the eyes and said, "You are capable. You matter. You deserve a future."
+                      That sentence broke me open. And it built this entire organization.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      I've seen what happens when a young man or young woman puts those boots on for the first time. Something changes. It's not just footwear. It's hope. It's identity. It's responsibility. It's the beginning of believing they can build a life they're proud of.
+                      To most people, steel toe boots are just work boots. But to the young adults we serve, they represent something that many of them have never experienced: someone believing in them. Someone investing in their future. Someone saying, "You are capable. You matter. You deserve a real shot at life."
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      I have watched young men and women put those boots on for the first time and stand a little taller. I have watched their eyes change. Something shifts. It is not just footwear. It is hope. It is identity. It is the first time they have ever felt like they belonged somewhere.
                     </p>
 
                     <motion.p
@@ -113,19 +121,19 @@ export default function FounderMessage() {
                       transition={{ duration: 0.5 }}
                       className="text-[#e91e8c] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#0f1b2d]"
                     >
-                      That's why Steel Toes & Second Chances was created.
+                      That is why Steel Toes & Second Chances exists.
                     </motion.p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      Not because these young people are broken, but because too many have simply been overlooked.
+                      Not because these young people are broken. They are not. They are resilient, brilliant, and full of potential that the world has refused to see. They have simply been overlooked, underfunded, and written off before they ever had a fair chance.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      Some have aged out of systems that failed them. Some have made mistakes. Some never had guidance, stability, transportation, support, or someone willing to open a door for them. But I refuse to believe a hard beginning has to define the rest of someone's life.
+                      Some have aged out of systems that were supposed to protect them. Some have made mistakes that follow them like shadows. Some have never had a stable home, a mentor, reliable transportation, or a single adult who showed up for them consistently. But I refuse to accept that a difficult beginning has to write the ending of someone's story.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      This organization was built to create real pathways into the workforce, into mentorship, into purpose, and into a future that once felt out of reach.
+                      This organization was built to change that narrative. We create real pathways into the workforce, into mentorship, into purpose, and into a future that once felt impossible. We do not just hand out resources. We walk beside these young adults. We show up. We stay.
                     </p>
 
                     <motion.p
@@ -139,7 +147,11 @@ export default function FounderMessage() {
                     </motion.p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      To every employer, mentor, donor, educator, partner, and supporter who has believed in this vision from the beginning, thank you. Thank you for seeing the value in these young people. Thank you for understanding that workforce development is not just about filling jobs. It's about changing lives, strengthening families, and building stronger communities for generations to come.
+                      To every employer who gave one of our young adults a chance when their resume was empty. To every mentor who answered a phone call at midnight. To every donor who believed in a vision before there were results to show. Thank you. You saw what I see every single day: that these young people are worth fighting for.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      That young man with the taped shoes? He is now a certified welder. He has his own apartment. He calls me on holidays. And last month, he asked how he could volunteer to mentor the next group coming through.
                     </p>
 
                     <motion.div
@@ -150,12 +162,16 @@ export default function FounderMessage() {
                       className="bg-gradient-to-r from-[#0f1b2d] to-[#1e3a5f] rounded-xl p-6 text-white"
                     >
                       <p className="italic text-lg leading-relaxed">
-                        "Every pair of boots. Every opportunity. Every conversation. Every second chance matters."
+                        "Every pair of boots we give is a promise. Every second chance we offer is a declaration that someone's past does not get to decide their future."
                       </p>
                     </motion.div>
 
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      If you are reading this and you feel something stirring in your heart, listen to it. Whether you can offer a job, an hour of your time, a financial gift, or simply your belief that these young people deserve better, there is a place for you here.
+                    </p>
+
                     <p className="text-[#e91e8c] leading-relaxed text-xl font-bold">
-                      And we're just getting started.
+                      We are just getting started. And the best is yet to come.
                     </p>
                   </div>
 
