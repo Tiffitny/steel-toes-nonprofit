@@ -115,7 +115,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">Our Promise</h4>
             <p className="text-white/60 text-sm leading-relaxed">
-              100% of donations go directly to equipping youth with boots, training, housing support, and mentorship.
+              Your donations help equip youth with boots, training, housing support, and mentorship — building real futures one young person at a time.
             </p>
           </div>
         </motion.div>
