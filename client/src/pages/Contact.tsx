@@ -92,7 +92,7 @@ export default function Contact() {
               Let's <span className="text-gradient">Talk</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/70 leading-relaxed max-w-2xl">
-              Whether you're a young adult looking for opportunity, a mentor ready to give back, or a partner who wants to make a difference — we want to hear from you.
+              Whether you're a young adult looking for opportunity, a mentor ready to give back, or a partner who wants to make a difference, we want to hear from you.
             </p>
           </motion.div>
         </div>
@@ -281,9 +281,9 @@ export default function Contact() {
                   className="bg-gradient-to-br from-[#0f1b2d] to-[#1e3a5f] rounded-2xl p-6 text-white"
                 >
                   <p className="text-white/80 italic leading-relaxed mb-4">
-                    "Every message we receive is a potential life changed. Don't hesitate — reach out. We're here for you."
+                    "Every message we receive is a potential life changed. Don't hesitate. Reach out. We're here for you."
                   </p>
-                  <p className="text-[#ff4db2] font-medium text-sm">— Tiffany Johnson, Founder</p>
+                  <p className="text-[#ff4db2] font-medium text-sm">Tiffany Johnson, Founder</p>
                 </motion.div>
 
                 {/* Direct contact */}

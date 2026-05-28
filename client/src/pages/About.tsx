@@ -69,7 +69,7 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#0f1b2d] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Our Mission</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  To equip youth and young adults with the essential resources needed for a successful transition into employment — including clothing, boots, housing assistance, vehicle support, and any other critical aid that fosters a strong foundation for their future.
+                  To equip youth and young adults with the essential resources needed for a successful transition into employment. This includes clothing, boots, housing assistance, vehicle support, and any other critical aid that fosters a strong foundation for their future.
                 </p>
               </motion.div>
             </AnimatedSection>
@@ -86,7 +86,7 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#0f1b2d] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Our Vision</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  To remove barriers from vulnerable youth populations by providing pathways to employability, services, and stability — so that no young person is left behind simply because they lacked resources or support.
+                  To remove barriers from vulnerable youth populations by providing pathways to employability, services, and stability so that no young person is left behind simply because they lacked resources or support.
                 </p>
               </motion.div>
             </AnimatedSection>
@@ -185,7 +185,7 @@ export default function About() {
             {[
               { icon: Compass, title: "Direction", desc: "Providing a clear, structured roadmap for life and vocational success.", color: "from-blue-500 to-blue-700" },
               { icon: Lightbulb, title: "Purpose", desc: "Helping youth discover their unique talents and self-worth.", color: "from-amber-500 to-orange-600" },
-              { icon: Zap, title: "Transformation", desc: "Witnessing lives change completely — from survival to thriving stability.", color: "from-[#e91e8c] to-[#c4177a]" },
+              { icon: Zap, title: "Transformation", desc: "Witnessing lives change completely, from survival to thriving stability.", color: "from-[#e91e8c] to-[#c4177a]" },
             ].map((value, i) => (
               <AnimatedSection key={i} delay={i * 0.15}>
                 <motion.div
@@ -214,7 +214,7 @@ export default function About() {
               Ready to make a <span className="text-gradient">difference</span>?
             </h2>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-              Whether you're an employer, mentor, donor, or simply someone who believes in second chances — there's a place for you here.
+              Whether you're an employer, mentor, donor, or simply someone who believes in second chances, there's a place for you here.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/partnerships">

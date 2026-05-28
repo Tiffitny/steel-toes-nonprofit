@@ -309,7 +309,7 @@ export default function Home() {
               <p className="text-xl sm:text-2xl text-white/80 italic leading-relaxed">
                 "These aren't statistics. These are young people with immense potential who were dealt a difficult hand."
               </p>
-              <footer className="mt-4 text-[#ff4db2] font-medium">— Tiffany Johnson, Founder</footer>
+              <footer className="mt-4 text-[#ff4db2] font-medium">Tiffany Johnson, Founder</footer>
             </blockquote>
           </AnimatedSection>
         </div>

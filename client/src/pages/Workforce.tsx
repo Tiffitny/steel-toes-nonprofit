@@ -189,7 +189,7 @@ export default function Workforce() {
               Ready to take the <span className="text-gradient">first step</span>?
             </h2>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-              Whether you're a young adult looking for opportunity, a mentor ready to give back, or an employer who believes in second chances — reach out.
+              Whether you're a young adult looking for opportunity, a mentor ready to give back, or an employer who believes in second chances, reach out.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">

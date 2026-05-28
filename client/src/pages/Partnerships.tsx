@@ -187,7 +187,7 @@ export default function Partnerships() {
               Every partnership <span className="text-gradient">changes a life</span>
             </h2>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-              Whether you can offer a job, an hour of mentorship, or financial support — you are part of the solution. Reach out and let's talk about how you can help.
+              Whether you can offer a job, an hour of mentorship, or financial support, you are part of the solution. Reach out and let's talk about how you can help.
             </p>
             <Link href="/contact">
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
