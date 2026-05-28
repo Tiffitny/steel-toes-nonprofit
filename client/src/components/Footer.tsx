@@ -68,6 +68,7 @@ export default function Footer() {
                 { label: "Partnerships", href: "/partnerships" },
                 { label: "Founder's Story", href: "/founder-message" },
                 { label: "Contact", href: "/contact" },
+                { label: "Donate", href: "/donate" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-white/60 hover:text-white transition-colors text-sm flex items-center gap-1 group">

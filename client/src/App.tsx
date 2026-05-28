@@ -11,6 +11,7 @@ import Partnerships from "./pages/Partnerships";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
 import FounderMessage from "./pages/FounderMessage";
+import Donate from "./pages/Donate";
 import BootEffects from "./components/BootEffects";
 
 function Router() {
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/partners" component={Partners} />
       <Route path="/contact" component={Contact} />
       <Route path="/founder-message" component={FounderMessage} />
+      <Route path="/donate" component={Donate} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

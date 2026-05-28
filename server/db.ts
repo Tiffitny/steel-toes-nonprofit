@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users, InsertContactInquiry, contactInquiries } from "../drizzle/schema";
+import { InsertUser, users, InsertContactInquiry, contactInquiries, InsertDonation, donations } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -101,6 +101,22 @@ export async function createContactInquiry(inquiry: InsertContactInquiry) {
     return result;
   } catch (error) {
     console.error("[Database] Failed to create contact inquiry:", error);
+    throw error;
+  }
+}
+
+export async function createDonation(donation: InsertDonation) {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot create donation: database not available");
+    throw new Error("Database not available");
+  }
+
+  try {
+    const result = await db.insert(donations).values(donation);
+    return result;
+  } catch (error) {
+    console.error("[Database] Failed to create donation:", error);
     throw error;
   }
 }

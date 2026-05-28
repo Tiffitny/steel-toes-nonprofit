@@ -43,3 +43,23 @@ export const contactInquiries = mysqlTable("contact_inquiries", {
 
 export type ContactInquiry = typeof contactInquiries.$inferSelect;
 export type InsertContactInquiry = typeof contactInquiries.$inferInsert;
+
+/**
+ * Donations table for tracking completed Stripe checkout sessions.
+ * Only stores essential Stripe identifiers and business metadata.
+ */
+export const donations = mysqlTable("donations", {
+  id: int("id").autoincrement().primaryKey(),
+  stripeSessionId: varchar("stripe_session_id", { length: 255 }).notNull().unique(),
+  stripePaymentIntentId: varchar("stripe_payment_intent_id", { length: 255 }),
+  amount: int("amount").notNull(), // amount in cents
+  currency: varchar("currency", { length: 10 }).default("usd").notNull(),
+  donorEmail: varchar("donor_email", { length: 320 }),
+  donorName: varchar("donor_name", { length: 255 }),
+  givingLevel: varchar("giving_level", { length: 100 }),
+  status: mysqlEnum("status", ["completed", "pending", "failed"]).default("pending").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type Donation = typeof donations.$inferSelect;
+export type InsertDonation = typeof donations.$inferInsert;

@@ -57,3 +57,13 @@
 - [x] Boot favicon in browser tab
 - [x] Boot loading animation on mobile page load
 - [x] Boot touch ripple effect on mobile tap
+
+## Donation Integration
+- [x] Create Stripe webhook handler at /api/stripe/webhook (BEFORE express.json)
+- [x] Create donation tRPC router with createCheckoutSession procedure
+- [x] Create Donate page with giving levels ($50, $150, $500, $1000) and custom amount
+- [x] Add /donate route to App.tsx
+- [x] Update Navigation CTA button from /contact to /donate
+- [x] Add Donate link to Footer
+- [x] Write vitest tests for donation router
+- [x] Add donations table to schema for tracking

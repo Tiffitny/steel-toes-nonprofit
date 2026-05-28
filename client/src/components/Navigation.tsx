@@ -88,10 +88,10 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Link href="/contact">
+            <Link href="/donate">
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                 <Button className="bg-gradient-to-r from-[#e91e8c] to-[#ff4db2] hover:from-[#c4177a] hover:to-[#e91e8c] text-white shadow-lg shadow-pink-500/25 border-0 rounded-full px-6">
-                  <Heart className="mr-2 h-4 w-4" /> Get Involved
+                  <Heart className="mr-2 h-4 w-4" /> Donate
                 </Button>
               </motion.div>
             </Link>
@@ -147,9 +147,9 @@ export default function Navigation() {
                 transition={{ delay: 0.4, duration: 0.3 }}
                 className="pt-3"
               >
-                <Link href="/contact" onClick={() => setIsOpen(false)}>
+                <Link href="/donate" onClick={() => setIsOpen(false)}>
                   <Button className="w-full bg-gradient-to-r from-[#e91e8c] to-[#ff4db2] text-white rounded-full">
-                    <Heart className="mr-2 h-4 w-4" /> Get Involved
+                    <Heart className="mr-2 h-4 w-4" /> Donate
                   </Button>
                 </Link>
               </motion.div>
