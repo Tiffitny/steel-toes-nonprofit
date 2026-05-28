@@ -44,7 +44,7 @@ export default function FounderMessage() {
               A Message from Our <span className="text-gradient">Founder</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/70 leading-relaxed max-w-2xl">
-              Tiffany Johnson's vision for breaking cycles of poverty and giving young people second chances.
+              The moment that started it all.
             </p>
           </motion.div>
         </div>
@@ -80,60 +80,40 @@ export default function FounderMessage() {
               <AnimatedSection delay={0.1}>
                 <div className="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-gray-100">
                   <div className="space-y-6">
-                    <p className="text-gray-700 leading-relaxed text-lg">
-                      I want to tell you about a moment I will never forget.
+                    <p className="text-gray-700 leading-relaxed text-lg font-medium">
+                      I need to tell you something.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      A young man walked into our program with his head down, wearing shoes held together with tape. He was 19 years old. He had aged out of foster care six months earlier with nothing. No family to call. No bed to sleep in. No one checking on him. He told me he had been sleeping in his car for weeks, and that he had applied to 47 jobs and heard back from none of them.
+                      I was in workforce development. I loved it. I believed in it. But I kept running into the same wall. The young adults who needed the most help were the ones falling through every crack the system had. Aged out of foster care. Released from juvenile detention. Couch surfing. Sleeping in cars. Walking into job fairs with no ID, no address, no references, no guidance.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      When I handed him his first pair of steel toe boots, he just stared at them. Then he looked up at me and said:
+                      And I kept thinking, something has to change. This cannot be how it ends for them.
                     </p>
 
-                    <motion.p
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5 }}
-                      className="text-[#0f1b2d] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#e91e8c]"
-                    >
-                      "No one has ever given me anything and expected me to succeed before."
-                    </motion.p>
-
-                    <p className="text-gray-700 leading-relaxed text-lg">
-                      That sentence broke me open. And it built this entire organization.
+                    <p className="text-gray-700 leading-relaxed text-lg font-medium">
+                      Then one day I met him.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      To most people, steel toe boots are just work boots. But to the young adults we serve, they represent something that many of them have never experienced: someone believing in them. Someone investing in their future. Someone saying, "You are capable. You matter. You deserve a real shot at life."
+                      He was 18. Quiet. Would not look me in the eye. His shoes were held together with tape. Not duct tape. Clear packing tape, like he was trying to hide it. He had aged out of foster care with nowhere to go. No family. No support. Sleeping in his car for weeks. He told me he had applied to over 40 jobs. Not one person called him back. Not one.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      I have watched young men and women put those boots on for the first time and stand a little taller. I have watched their eyes change. Something shifts. It is not just footwear. It is hope. It is identity. It is the first time they have ever felt like they belonged somewhere.
-                    </p>
-
-                    <motion.p
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5 }}
-                      className="text-[#e91e8c] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#0f1b2d]"
-                    >
-                      That is why Steel Toes & Second Chances exists.
-                    </motion.p>
-
-                    <p className="text-gray-700 leading-relaxed text-lg">
-                      Not because these young people are broken. They are not. They are resilient, brilliant, and full of potential that the world has refused to see. They have simply been overlooked, underfunded, and written off before they ever had a fair chance.
+                      I was able to give him a job. But the night before his first day, he called me. And I could hear it in his voice. He was not going to go.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      Some have aged out of systems that were supposed to protect them. Some have made mistakes that follow them like shadows. Some have never had a stable home, a mentor, reliable transportation, or a single adult who showed up for them consistently. But I refuse to accept that a difficult beginning has to write the ending of someone's story.
+                      I asked him what size shoe he wore.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      This organization was built to change that narrative. We create real pathways into the workforce, into mentorship, into purpose, and into a future that once felt impossible. We do not just hand out resources. We walk beside these young adults. We show up. We stay.
+                      He went quiet. For a long time. Then he said, "Why?" Like no one had ever asked him something that simple with the intention of actually helping.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      I went and bought him a pair of steel toe boots that night. I told him to meet me in the parking lot at 5 AM before his shift.
                     </p>
 
                     <motion.p
@@ -143,15 +123,83 @@ export default function FounderMessage() {
                       transition={{ duration: 0.5 }}
                       className="text-[#0f1b2d] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#e91e8c]"
                     >
-                      And none of this happens alone.
+                      I did not know if he would come.
                     </motion.p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      To every employer who gave one of our young adults a chance when their resume was empty. To every mentor who answered a phone call at midnight. To every donor who believed in a vision before there were results to show. Thank you. You saw what I see every single day: that these young people are worth fighting for.
+                      It was still dark outside. And he was there. Standing by his car, waiting. I handed him the box. He just held it for a while. Didn't say anything. Just stared at them like he couldn't believe they were real. Then he put them on, laced them up, and walked in.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      That young man with the taped shoes? He is now a certified welder. He has his own apartment. He calls me on holidays. And last month, he asked how he could volunteer to mentor the next group coming through.
+                      The next day, he texted me. Just a few words. But they broke me.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      He said he had already decided he was not going to show up that morning. That he was done. But he came because I asked him to. Because I showed up. Because nobody had ever done that for him before. He said I believed in him when no one else did. That I helped him when I did not have to. And that he was going to make me proud.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      I sat in my car after reading that text and cried. And cried. And cried. Until my chest hurt and I could not catch my breath.
+                    </p>
+
+                    <motion.p
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5 }}
+                      className="text-[#0f1b2d] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#e91e8c]"
+                    >
+                      Because it hit me all at once.
+                    </motion.p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      This was not one kid. This was thousands of kids. Right here. In our communities. Sleeping in cars. Aging out of systems with nothing. Walking out of facilities with a trash bag and no plan, just to end up right back on the streets. Invisible. Overlooked. Forgotten. All of them one pair of boots away from a completely different life. One person showing up away from believing they are worth something. One "I believe in you" away from becoming who they were always meant to be.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      And there was no program for this. No organization catching them at this exact moment. The moment between getting a chance and giving up because of shame. The moment where one person showing up could change the entire direction of a life.
+                    </p>
+
+                    <motion.p
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5 }}
+                      className="text-[#e91e8c] leading-relaxed text-2xl font-bold pl-6 border-l-4 border-[#0f1b2d]"
+                    >
+                      So I built one.
+                    </motion.p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      I did not have funding. I did not have a board. I did not have a building. I had a receipt for a pair of boots.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg font-medium">
+                      That young man? He almost did not make it.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      There were weeks where he stopped answering my calls. Weeks where I drove around looking for his car at night. Checking parking lots. Gas stations. The places you go when you have nowhere else.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      One night I found him parked behind a gas station. I did not knock on his window with a speech. I did not show up with a plan. I just parked next to him. Sat in my car. And stayed.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      He did not say a word for a long time. And neither did I. I just let him know someone still believed in him. That he was not invisible to me.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg font-medium">
+                      He came back. Slowly.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      He showed up to a training I set up. Then another. Then he got his certification. Then his first real paycheck. Then his own apartment.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      Last month he called me and asked how he could give back. He wants to mentor the next kid who walks in with taped shoes and no hope.
                     </p>
 
                     <motion.div
@@ -162,21 +210,34 @@ export default function FounderMessage() {
                       className="bg-gradient-to-r from-[#0f1b2d] to-[#1e3a5f] rounded-xl p-6 text-white"
                     >
                       <p className="italic text-lg leading-relaxed">
-                        "Every pair of boots we give is a promise. Every second chance we offer is a declaration that someone's past does not get to decide their future."
+                        That is what this is about.
                       </p>
                     </motion.div>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      If you are reading this and you feel something stirring in your heart, listen to it. Whether you can offer a job, an hour of your time, a financial gift, or simply your belief that these young people deserve better, there is a place for you here.
+                      Not every story ends like his. Some of these young people are so deep in survival mode that they cannot receive help yet. Some disappear. Some break my heart in ways I do not talk about publicly.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      And that is exactly why I keep going. Because the ones who are ready, the ones who just need one person, one chance, one pair of boots, they deserve someone who will not give up on them.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      If you are reading this and something in your chest is tightening, listen to that. That is the same feeling I had sitting in my car reading that text message. That is the feeling that built this organization from nothing.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      Whether you can offer a job, an hour of your time, a financial gift, or simply your belief that these young people deserve better, there is a place for you here.
                     </p>
 
                     <p className="text-[#e91e8c] leading-relaxed text-xl font-bold">
-                      We are just getting started. And the best is yet to come.
+                      We are just getting started.
                     </p>
                   </div>
 
                   {/* Signature */}
                   <div className="pt-8 mt-8 border-t border-gray-100">
+                    <p className="text-gray-600 italic mb-4">With love and purpose,</p>
                     <img
                       src="/manus-storage/tiffany_signature_v3_2a585e6b.png"
                       alt="Tiffany Johnson signature"
