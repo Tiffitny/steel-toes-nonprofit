@@ -41,16 +41,16 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 cursor-pointer group">
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-3 cursor-pointer group">
             <motion.div
               whileHover={{ scale: 1.05, rotate: -3 }}
               whileTap={{ scale: 0.95 }}
-              className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0f1b2d] to-[#1e3a5f] flex items-center justify-center shadow-lg"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-[#0f1b2d] to-[#1e3a5f] flex items-center justify-center shadow-lg flex-shrink-0"
             >
-              <span className="text-white font-bold text-sm">ST</span>
+              <span className="text-white font-bold text-xs sm:text-sm">ST</span>
             </motion.div>
-            <div className="hidden sm:block">
-              <span className={`font-bold text-lg tracking-tight transition-colors duration-300 ${
+            <div>
+              <span className={`font-bold text-base sm:text-lg tracking-tight transition-colors duration-300 ${
                 scrolled ? "text-[#0f1b2d]" : "text-white"
               }`} style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Steel Toes
