@@ -287,16 +287,14 @@
   }
 }
 
-/* Custom cursor - Steel Toe Work Boot */
-html, body {
-  cursor: url('/manus-storage/cursor-boot-32x32_085cc749.png') 16 16, auto;
-}
-
-a, button, [role="button"], input, select, textarea, label[for] {
-  cursor: url('/manus-storage/cursor-boot-32x32_085cc749.png') 16 16, pointer;
-}
 
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body,
+* {
+  cursor: url('/cursor-boot.png') 16 16, auto;
 }
