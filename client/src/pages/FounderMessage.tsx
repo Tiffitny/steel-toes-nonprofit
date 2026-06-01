@@ -63,7 +63,7 @@ export default function FounderMessage() {
               >
                 <div className="rounded-2xl shadow-xl overflow-hidden border-4 border-white">
                   <img
-                    src="/manus-storage/tiffany_johnson_20647943.jpg"
+                    src="/manus-storagetiffany_johnson_20647943.jpg"
                     alt="Tiffany Johnson, Founder & President"
                     className="w-full h-auto object-cover"
                   />
