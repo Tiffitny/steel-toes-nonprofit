@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const BOOT_ICON_URL = "/manus-storage/cursor-boot-32x32_085cc749.png";
+const BOOT_ICON_URL = "/cursor-boot.png";
 
 // Boot loading animation - shows briefly on mobile when page loads
 function BootLoader() {
