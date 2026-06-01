@@ -113,7 +113,7 @@ export default function BootEffects() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  if (!isMobile) return null;
+ 
 
   return (
     <>
