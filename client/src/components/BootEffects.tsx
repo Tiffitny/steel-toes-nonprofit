@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const BOOT_ICON_URL = "/logo-transparent.png";
+const BOOT_ICON_URL = "/logo-vibrant.png";
 
 // Boot loading animation - shows briefly on mobile when page loads
 function BootLoader() {
