@@ -156,7 +156,7 @@ export default function Home() {
                 >
                   <div className="absolute inset-0 bg-[#e91e8c]/20 rounded-3xl blur-3xl scale-110" />
                   <img
-                    src="/logo-transparent.png"
+                    src="/logo-white-text.png"
                     alt="Steel Toes & Second Chances Logo"
                     className="relative w-full max-w-sm h-auto rounded-3xl shadow-2xl"
                   />
