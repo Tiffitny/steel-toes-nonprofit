@@ -74,7 +74,7 @@ export default function Contact() {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#4a7ba7] via-[#5a8bc0] to-[#7aabea]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2d5a8c] via-[#3d6a9c] to-[#5d8abc]" />
         <motion.div
           animate={{ x: [0, -15, 0], y: [0, 20, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
@@ -115,7 +115,7 @@ export default function Contact() {
                   <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mx-auto mb-3 shadow-lg`}>
                     <item.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="font-bold text-[#4a7ba7] mb-1" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[#2d5a8c] mb-1" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{item.title}</h3>
                   {item.href ? (
                     <a href={item.href} className="text-gray-600 hover:text-[#e91e8c] transition-colors text-sm break-all">
                       {item.value}
@@ -137,7 +137,7 @@ export default function Contact() {
             {/* Form */}
             <AnimatedSection className="lg:col-span-3">
               <div className="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-gray-100">
-                <h2 className="text-2xl font-bold text-[#4a7ba7] mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Send a Message</h2>
+                <h2 className="text-2xl font-bold text-[#2d5a8c] mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Send a Message</h2>
                 <p className="text-gray-600 mb-8">We'll get back to you within 24 hours.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -252,7 +252,7 @@ export default function Contact() {
                   whileHover={{ y: -2 }}
                   className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100"
                 >
-                  <h3 className="font-bold text-[#4a7ba7] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Quick Links</h3>
+                  <h3 className="font-bold text-[#2d5a8c] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Quick Links</h3>
                   <div className="space-y-3">
                     <Link href="/workforce" className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors group">
                       <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
@@ -278,7 +278,7 @@ export default function Contact() {
                 {/* Quote */}
                 <motion.div
                   whileHover={{ y: -2 }}
-                  className="bg-gradient-to-br from-[#4a7ba7] to-[#7aabea] rounded-2xl p-6 text-white"
+                  className="bg-gradient-to-br from-[#2d5a8c] to-[#5d8abc] rounded-2xl p-6 text-white"
                 >
                   <p className="text-white/80 italic leading-relaxed mb-4">
                     "Every message we receive is a potential life changed. Don't hesitate. Reach out. We're here for you."
@@ -291,12 +291,12 @@ export default function Contact() {
                   whileHover={{ y: -2 }}
                   className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100"
                 >
-                  <h3 className="font-bold text-[#4a7ba7] mb-3" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Prefer to call?</h3>
+                  <h3 className="font-bold text-[#2d5a8c] mb-3" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Prefer to call?</h3>
                   <p className="text-gray-600 text-sm mb-4">
                     Tiffany is available Monday through Friday, 9AM to 5PM. Don't be a stranger.
                   </p>
                   <a href="tel:+18632096615">
-                    <Button variant="outline" className="w-full rounded-full border-[#4a7ba7]/20 text-[#4a7ba7] hover:bg-[#4a7ba7] hover:text-white">
+                    <Button variant="outline" className="w-full rounded-full border-[#2d5a8c]/20 text-[#2d5a8c] hover:bg-[#2d5a8c] hover:text-white">
                       <Phone className="mr-2 h-4 w-4" /> (863) 209-6615
                     </Button>
                   </a>

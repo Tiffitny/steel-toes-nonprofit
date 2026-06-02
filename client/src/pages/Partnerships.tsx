@@ -29,7 +29,7 @@ export default function Partnerships() {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#4a7ba7] via-[#162544] to-[#7aabea]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2d5a8c] via-[#162544] to-[#5d8abc]" />
         <motion.div
           animate={{ x: [0, 25, 0], y: [0, -10, 0] }}
           transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
@@ -60,7 +60,7 @@ export default function Partnerships() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <span className="inline-block px-4 py-1.5 rounded-full bg-pink-50 text-[#e91e8c] text-sm font-medium mb-4">Why Partner</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4a7ba7] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2d5a8c] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Why Partner With <span className="text-gradient">Steel Toes</span>?
               </h2>
             </div>
@@ -82,7 +82,7 @@ export default function Partnerships() {
                   <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-6 shadow-lg`}>
                     <item.icon className="h-7 w-7 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#4a7ba7] mb-3" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{item.title}</h3>
+                  <h3 className="text-xl font-bold text-[#2d5a8c] mb-3" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{item.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{item.desc}</p>
                 </motion.div>
               </AnimatedSection>
@@ -92,7 +92,7 @@ export default function Partnerships() {
       </section>
 
       {/* Partnership Opportunities */}
-      <section className="w-full py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#4a7ba7] relative overflow-hidden">
+      <section className="w-full py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#2d5a8c] relative overflow-hidden">
         <motion.div
           animate={{ rotate: [0, 360] }}
           transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
@@ -183,7 +183,7 @@ export default function Partnerships() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#e91e8c]/5 via-transparent to-blue-500/5" />
         <AnimatedSection>
           <div className="max-w-4xl mx-auto text-center relative z-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#4a7ba7] tracking-tight mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#2d5a8c] tracking-tight mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
               Every partnership <span className="text-gradient">changes a life</span>
             </h2>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">

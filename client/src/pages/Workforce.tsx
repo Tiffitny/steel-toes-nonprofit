@@ -29,7 +29,7 @@ export default function Workforce() {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#4a7ba7] via-[#5a8bc0] to-[#7aabea]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2d5a8c] via-[#3d6a9c] to-[#5d8abc]" />
         <motion.div
           animate={{ x: [0, -20, 0], y: [0, 15, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
@@ -60,7 +60,7 @@ export default function Workforce() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <span className="inline-block px-4 py-1.5 rounded-full bg-pink-50 text-[#e91e8c] text-sm font-medium mb-4">What We Provide</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4a7ba7] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2d5a8c] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Everything they need to <span className="text-gradient">succeed</span>
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto mt-4 text-lg">
@@ -88,7 +88,7 @@ export default function Workforce() {
                   <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-4 shadow-lg`}>
                     <item.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h4 className="font-bold text-[#4a7ba7] text-lg mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{item.title}</h4>
+                  <h4 className="font-bold text-[#2d5a8c] text-lg mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{item.title}</h4>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
                 </motion.div>
               </AnimatedSection>
@@ -98,7 +98,7 @@ export default function Workforce() {
       </section>
 
       {/* The Journey - Timeline */}
-      <section className="w-full py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#4a7ba7] relative overflow-hidden">
+      <section className="w-full py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#2d5a8c] relative overflow-hidden">
         <motion.div
           animate={{ rotate: [0, 360] }}
           transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
@@ -148,7 +148,7 @@ export default function Workforce() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <span className="inline-block px-4 py-1.5 rounded-full bg-pink-50 text-[#e91e8c] text-sm font-medium mb-4">Eligibility</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4a7ba7] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2d5a8c] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Who This Is For
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto mt-4 text-lg">
@@ -185,7 +185,7 @@ export default function Workforce() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#e91e8c]/5 via-transparent to-blue-500/5" />
         <AnimatedSection>
           <div className="max-w-4xl mx-auto text-center relative z-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#4a7ba7] tracking-tight mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#2d5a8c] tracking-tight mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
               Ready to take the <span className="text-gradient">first step</span>?
             </h2>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
@@ -201,7 +201,7 @@ export default function Workforce() {
               </Link>
               <Link href="/partnerships">
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                  <Button size="lg" variant="outline" className="border-[#4a7ba7]/20 text-[#4a7ba7] hover:bg-[#4a7ba7] hover:text-white rounded-full px-8 w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="border-[#2d5a8c]/20 text-[#2d5a8c] hover:bg-[#2d5a8c] hover:text-white rounded-full px-8 w-full sm:w-auto">
                     Become a Partner
                   </Button>
                 </motion.div>

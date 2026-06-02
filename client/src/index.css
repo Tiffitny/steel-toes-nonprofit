@@ -80,15 +80,15 @@
   --sidebar-ring: oklch(0.50 0.20 260);
 
   /* Custom design tokens */
-  --navy: #4a7ba7;
-  --navy-light: #5a8bc0;
-  --navy-mid: #6a9bd9;
+  --navy: #2d5a8c;
+  --navy-light: #3d6a9c;
+  --navy-mid: #4d7aac;
   --pink: #e91e8c;
   --pink-light: #ff4db2;
   --pink-dark: #c4177a;
-  --gradient-primary: linear-gradient(135deg, #4a7ba7 0%, #5a8bc0 50%, #6a9bd9 100%);
+  --gradient-primary: linear-gradient(135deg, #2d5a8c 0%, #3d6a9c 50%, #4d7aac 100%);
   --gradient-accent: linear-gradient(135deg, #e91e8c 0%, #ff4db2 100%);
-  --gradient-hero: linear-gradient(160deg, #5a8bc0 0%, #6a9bd9 40%, #7aabea 70%, #8abbf5 100%);
+  --gradient-hero: linear-gradient(160deg, #3d6a9c 0%, #4d7aac 40%, #5d8abc 70%, #6d9acd 100%);
   --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
   --ease-out-expo: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out-smooth: cubic-bezier(0.77, 0, 0.175, 1);
