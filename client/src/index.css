@@ -88,7 +88,7 @@
   --pink-dark: #c4177a;
   --gradient-primary: linear-gradient(135deg, #0f1b2d 0%, #1a2d4a 50%, #243b5c 100%);
   --gradient-accent: linear-gradient(135deg, #e91e8c 0%, #ff4db2 100%);
-  --gradient-hero: linear-gradient(160deg, #0f1b2d 0%, #162544 40%, #1e3a5f 70%, #243b5c 100%);
+  --gradient-hero: linear-gradient(160deg, #5a8bc0 0%, #6a9bd9 40%, #7aabea 70%, #8abbf5 100%);
   --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
   --ease-out-expo: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out-smooth: cubic-bezier(0.77, 0, 0.175, 1);

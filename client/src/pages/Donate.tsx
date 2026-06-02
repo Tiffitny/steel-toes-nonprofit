@@ -138,7 +138,7 @@ export default function Donate() {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1b2d] via-[#162544] to-[#1e3a5f]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1b2d] via-[#1a2d4a] to-[#1e3a5f]" />
         <motion.div
           animate={{ x: [0, -15, 0], y: [0, 20, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
@@ -312,7 +312,7 @@ export default function Donate() {
       </section>
 
       {/* Impact Section */}
-      <section className="py-16 sm:py-24 bg-gradient-to-br from-[#0f1b2d] via-[#162544] to-[#1e3a5f]">
+      <section className="py-16 sm:py-24 bg-gradient-to-br from-[#0f1b2d] via-[#1a2d4a] to-[#1e3a5f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
             <h2

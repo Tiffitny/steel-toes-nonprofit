@@ -54,7 +54,7 @@ export default function Home() {
       {/* Hero Section - Full viewport with parallax */}
       <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
         {/* Animated background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1b2d] via-[#162544] to-[#1e3a5f]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1b2d] via-[#1a2d4a] to-[#243b5c]">
           {/* Animated gradient orbs */}
           <motion.div
             animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
@@ -156,7 +156,7 @@ export default function Home() {
                 >
                   <div className="absolute inset-0 bg-[#e91e8c]/20 rounded-3xl blur-3xl scale-110" />
                   <img
-                    src="/logo-vibrant.png"
+                    src="/logo-transparent.png"
                     alt="Steel Toes & Second Chances Logo"
                     className="relative w-full max-w-sm h-auto rounded-3xl shadow-2xl"
                   />
