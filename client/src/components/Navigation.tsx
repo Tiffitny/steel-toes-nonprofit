@@ -33,8 +33,8 @@ export default function Navigation() {
       transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-gray-100/50"
-          : "bg-transparent"
+          ? "bg-white/80 backdrop-blur-md shadow-lg shadow-black/5 border-b border-white/20"
+          : "bg-white/10 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +50,7 @@ export default function Navigation() {
             </motion.div>
             <div>
               <span className={`font-bold text-base sm:text-lg tracking-tight transition-colors duration-300 ${
-                scrolled ? "text-[#2d5a8c]" : "text-white"
+                scrolled ? "text-[#2d5a8c]" : "text-white drop-shadow-lg"
               }`} style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Steel Toes
               </span>
