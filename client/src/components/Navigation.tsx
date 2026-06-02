@@ -21,7 +21,6 @@ export default function Navigation() {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Programs", href: "/workforce" },
-    { label: "Partnerships", href: "/partnerships" },
     { label: "Partners", href: "/partners" },
     { label: "Founder's Story", href: "/founder-message" },
     { label: "Contact", href: "/contact" },

@@ -217,7 +217,7 @@ export default function About() {
               Whether you're an employer, mentor, donor, or simply someone who believes in second chances, there's a place for you here.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/partnerships">
+              <Link href="/contact">
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                   <Button size="lg" className="bg-gradient-to-r from-[#e91e8c] to-[#ff4db2] text-white rounded-full px-8 shadow-lg shadow-pink-500/25 border-0 w-full sm:w-auto">
                     Partner With Us <ArrowRight className="ml-2 h-4 w-4" />

@@ -155,7 +155,7 @@ export default function Partners() {
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
               We are always looking for partners who share our commitment to empowering young adults and creating pathways to opportunity.
             </p>
-            <Link href="/partnerships">
+            <Link href="/contact">
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                 <Button size="lg" className="bg-gradient-to-r from-[#0f1b2d] to-[#1e3a5f] text-white rounded-full px-8 shadow-lg border-0">
                   Learn About Partnership Opportunities <ArrowRight className="ml-2 h-4 w-4" />

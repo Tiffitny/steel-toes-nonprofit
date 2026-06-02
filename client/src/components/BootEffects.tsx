@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const BOOT_ICON_URL = "/cursor-boot.png";
+const BOOT_ICON_URL = "/logo-transparent.png";
 
 // Boot loading animation - shows briefly on mobile when page loads
 function BootLoader() {
@@ -19,7 +19,7 @@ function BootLoader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0f1b2d]"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/95 backdrop-blur-sm"
         >
           <motion.div
             initial={{ scale: 0.5, opacity: 0, rotate: -20 }}
@@ -39,7 +39,7 @@ function BootLoader() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="text-white/60 text-sm font-medium tracking-wider"
+              className="text-gray-600 text-sm font-medium tracking-wider"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
               STEEL TOES & SECOND CHANCES

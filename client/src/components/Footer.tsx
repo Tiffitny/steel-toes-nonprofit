@@ -65,7 +65,7 @@ export default function Footer() {
               {[
                 { label: "About Us", href: "/about" },
                 { label: "Programs", href: "/workforce" },
-                { label: "Partnerships", href: "/partnerships" },
+                { label: "Partners", href: "/partners" },
                 { label: "Founder's Story", href: "/founder-message" },
                 { label: "Contact", href: "/contact" },
                 { label: "Donate", href: "/donate" },
