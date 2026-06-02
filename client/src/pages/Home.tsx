@@ -330,7 +330,7 @@ export default function Home() {
               To every employer, mentor, donor, and supporter who believes in this vision: you are the reason second chances become real futures.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href="/partnerships">
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                   <Button size="lg" className="bg-gradient-to-r from-[#0f1b2d] to-[#1e3a5f] hover:from-[#1a2d4a] hover:to-[#243b5c] text-white rounded-full px-8 shadow-lg shadow-blue-900/20 w-full sm:w-auto">
                     Partner With Us <ArrowRight className="ml-2 h-4 w-4" />

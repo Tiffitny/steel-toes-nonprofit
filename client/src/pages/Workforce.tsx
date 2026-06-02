@@ -199,7 +199,7 @@ export default function Workforce() {
                   </Button>
                 </motion.div>
               </Link>
-              <Link href="/contact">
+              <Link href="/partnerships">
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                   <Button size="lg" variant="outline" className="border-[#0f1b2d]/20 text-[#0f1b2d] hover:bg-[#0f1b2d] hover:text-white rounded-full px-8 w-full sm:w-auto">
                     Become a Partner

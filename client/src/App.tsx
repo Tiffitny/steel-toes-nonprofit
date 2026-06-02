@@ -7,7 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Workforce from "./pages/Workforce";
-import Partners from "./pages/Partners";
+import Partnerships from "./pages/Partnerships";
 import Contact from "./pages/Contact";
 import FounderMessage from "./pages/FounderMessage";
 import Donate from "./pages/Donate";
@@ -20,7 +20,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/workforce" component={Workforce} />
-      <Route path="/partners" component={Partners} />
+      <Route path="/partnerships" component={Partnerships} />
       <Route path="/contact" component={Contact} />
       <Route path="/founder-message" component={FounderMessage} />
       <Route path="/donate" component={Donate} />

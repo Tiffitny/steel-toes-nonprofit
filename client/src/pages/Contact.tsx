@@ -260,6 +260,12 @@ export default function Contact() {
                       </div>
                       <span className="text-gray-700 text-sm font-medium">View Our Programs</span>
                     </Link>
+                    <Link href="/partnerships" className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors group">
+                      <div className="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center">
+                        <ArrowRight className="h-4 w-4 text-[#e91e8c] group-hover:translate-x-0.5 transition-transform" />
+                      </div>
+                      <span className="text-gray-700 text-sm font-medium">Partnership Opportunities</span>
+                    </Link>
                     <Link href="/founder-message" className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors group">
                       <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center">
                         <ArrowRight className="h-4 w-4 text-purple-600 group-hover:translate-x-0.5 transition-transform" />
