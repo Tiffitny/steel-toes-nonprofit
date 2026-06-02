@@ -296,5 +296,5 @@ html {
 html,
 body,
 * {
-  cursor: url('/cursor-boot-32.png') 16 16, auto;
+  cursor: url('/boot-cursor.png') 16 16, auto;
 }
