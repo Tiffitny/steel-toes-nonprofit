@@ -29,7 +29,7 @@ export default function About() {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1b2d] via-[#1a2d4a] to-[#1e3a5f]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#4a7ba7] via-[#5a8bc0] to-[#7aabea]" />
         <motion.div
           animate={{ x: [0, 20, 0], y: [0, -15, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
@@ -63,11 +63,11 @@ export default function About() {
                 transition={{ duration: 0.3 }}
                 className="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-gray-100 h-full relative overflow-hidden group"
               >
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0f1b2d] to-[#1e3a5f] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0f1b2d] to-[#1e3a5f] flex items-center justify-center mb-6 shadow-lg">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#4a7ba7] to-[#7aabea] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#4a7ba7] to-[#7aabea] flex items-center justify-center mb-6 shadow-lg">
                   <Target className="h-7 w-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0f1b2d] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Our Mission</h3>
+                <h3 className="text-2xl font-bold text-[#4a7ba7] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Our Mission</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   To equip youth and young adults with the essential resources needed for a successful transition into employment. This includes clothing, boots, housing assistance, vehicle support, and any other critical aid that fosters a strong foundation for their future.
                 </p>
@@ -84,7 +84,7 @@ export default function About() {
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#e91e8c] to-[#ff4db2] flex items-center justify-center mb-6 shadow-lg">
                   <Eye className="h-7 w-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0f1b2d] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Our Vision</h3>
+                <h3 className="text-2xl font-bold text-[#4a7ba7] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Our Vision</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   To remove barriers from vulnerable youth populations by providing pathways to employability, services, and stability so that no young person is left behind simply because they lacked resources or support.
                 </p>
@@ -95,7 +95,7 @@ export default function About() {
       </section>
 
       {/* The Barriers */}
-      <section className="w-full py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#0f1b2d] relative overflow-hidden">
+      <section className="w-full py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#4a7ba7] relative overflow-hidden">
         <motion.div
           animate={{ rotate: [0, 360] }}
           transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
@@ -145,7 +145,7 @@ export default function About() {
           <AnimatedSection>
             <div className="text-center mb-12">
               <span className="inline-block px-4 py-1.5 rounded-full bg-pink-50 text-[#e91e8c] text-sm font-medium mb-4">Our Story</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0f1b2d] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4a7ba7] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Born from <span className="text-gradient">lived experience</span>
               </h2>
             </div>
@@ -175,7 +175,7 @@ export default function About() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <span className="inline-block px-4 py-1.5 rounded-full bg-pink-50 text-[#e91e8c] text-sm font-medium mb-4">What Drives Us</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0f1b2d] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4a7ba7] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Core Values
               </h2>
             </div>
@@ -197,7 +197,7 @@ export default function About() {
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${value.color} flex items-center justify-center mx-auto mb-6 shadow-lg`}>
                     <value.icon className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#0f1b2d] mb-3" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{value.title}</h3>
+                  <h3 className="text-xl font-bold text-[#4a7ba7] mb-3" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{value.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{value.desc}</p>
                 </motion.div>
               </AnimatedSection>
@@ -210,7 +210,7 @@ export default function About() {
       <section className="w-full py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f1b2d] tracking-tight mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#4a7ba7] tracking-tight mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
               Ready to make a <span className="text-gradient">difference</span>?
             </h2>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
@@ -226,7 +226,7 @@ export default function About() {
               </Link>
               <Link href="/founder-message">
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                  <Button size="lg" variant="outline" className="border-[#0f1b2d]/20 text-[#0f1b2d] hover:bg-[#0f1b2d] hover:text-white rounded-full px-8 w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="border-[#4a7ba7]/20 text-[#4a7ba7] hover:bg-[#4a7ba7] hover:text-white rounded-full px-8 w-full sm:w-auto">
                     Read Tiffany's Story
                   </Button>
                 </motion.div>

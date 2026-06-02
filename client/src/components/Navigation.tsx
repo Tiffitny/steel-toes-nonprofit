@@ -44,13 +44,13 @@ export default function Navigation() {
             <motion.div
               whileHover={{ scale: 1.05, rotate: -3 }}
               whileTap={{ scale: 0.95 }}
-              className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-[#0f1b2d] to-[#1e3a5f] flex items-center justify-center shadow-lg flex-shrink-0"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-[#4a7ba7] to-[#7aabea] flex items-center justify-center shadow-lg flex-shrink-0"
             >
               <span className="text-white font-bold text-xs sm:text-sm">ST</span>
             </motion.div>
             <div>
               <span className={`font-bold text-base sm:text-lg tracking-tight transition-colors duration-300 ${
-                scrolled ? "text-[#0f1b2d]" : "text-white"
+                scrolled ? "text-[#4a7ba7]" : "text-white"
               }`} style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Steel Toes
               </span>
@@ -67,7 +67,7 @@ export default function Navigation() {
                   scrolled
                     ? location === item.href
                       ? "text-[#e91e8c]"
-                      : "text-gray-600 hover:text-[#0f1b2d] hover:bg-gray-100/80"
+                      : "text-gray-600 hover:text-[#4a7ba7] hover:bg-gray-100/80"
                     : location === item.href
                       ? "text-[#ff4db2]"
                       : "text-white/80 hover:text-white hover:bg-white/10"

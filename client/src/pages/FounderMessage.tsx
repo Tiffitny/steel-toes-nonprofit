@@ -26,7 +26,7 @@ export default function FounderMessage() {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1b2d] via-[#1a2d4a] to-[#1e3a5f]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#4a7ba7] via-[#5a8bc0] to-[#7aabea]" />
         <motion.div
           animate={{ x: [0, 20, 0], y: [0, -15, 0] }}
           transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
@@ -69,7 +69,7 @@ export default function FounderMessage() {
                   />
                 </div>
                 <div className="mt-4 text-center">
-                  <p className="font-bold text-[#0f1b2d] text-lg" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Tiffany Johnson</p>
+                  <p className="font-bold text-[#4a7ba7] text-lg" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Tiffany Johnson</p>
                   <p className="text-gray-500 text-sm">Founder & President</p>
                 </div>
               </motion.div>
@@ -121,7 +121,7 @@ export default function FounderMessage() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5 }}
-                      className="text-[#0f1b2d] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#e91e8c]"
+                      className="text-[#4a7ba7] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#e91e8c]"
                     >
                       I did not know if he would come.
                     </motion.p>
@@ -147,7 +147,7 @@ export default function FounderMessage() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5 }}
-                      className="text-[#0f1b2d] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#e91e8c]"
+                      className="text-[#4a7ba7] leading-relaxed text-xl font-bold pl-6 border-l-4 border-[#e91e8c]"
                     >
                       Because it hit me all at once.
                     </motion.p>
@@ -165,7 +165,7 @@ export default function FounderMessage() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5 }}
-                      className="text-[#e91e8c] leading-relaxed text-2xl font-bold pl-6 border-l-4 border-[#0f1b2d]"
+                      className="text-[#e91e8c] leading-relaxed text-2xl font-bold pl-6 border-l-4 border-[#4a7ba7]"
                     >
                       So I built one.
                     </motion.p>
@@ -207,7 +207,7 @@ export default function FounderMessage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.8 }}
-                      className="bg-gradient-to-r from-[#0f1b2d] to-[#1e3a5f] rounded-xl p-6 text-white"
+                      className="bg-gradient-to-r from-[#4a7ba7] to-[#7aabea] rounded-xl p-6 text-white"
                     >
                       <p className="italic text-lg leading-relaxed">
                         That is what this is about.

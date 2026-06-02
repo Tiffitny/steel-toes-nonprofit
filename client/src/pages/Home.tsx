@@ -54,7 +54,7 @@ export default function Home() {
       {/* Hero Section - Full viewport with parallax */}
       <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
         {/* Animated background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1b2d] via-[#1a2d4a] to-[#243b5c]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#4a7ba7] via-[#5a8bc0] to-[#6a9bd9]">
           {/* Animated gradient orbs */}
           <motion.div
             animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
@@ -195,7 +195,7 @@ export default function Home() {
             className="glass-light rounded-2xl p-8 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center"
           >
             <div>
-              <p className="text-3xl sm:text-4xl font-bold text-[#0f1b2d]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              <p className="text-3xl sm:text-4xl font-bold text-[#4a7ba7]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 <CountUp target="1 in 3" />
               </p>
               <p className="text-gray-600 text-sm mt-1">youth face chronic unemployment</p>
@@ -207,7 +207,7 @@ export default function Home() {
               <p className="text-gray-600 text-sm mt-1">had no stable job before arrest</p>
             </div>
             <div>
-              <p className="text-3xl sm:text-4xl font-bold text-[#0f1b2d]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              <p className="text-3xl sm:text-4xl font-bold text-[#4a7ba7]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 <CountUp target="1.5M+" />
               </p>
               <p className="text-gray-600 text-sm mt-1">disconnected youth annually</p>
@@ -222,7 +222,7 @@ export default function Home() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <span className="inline-block px-4 py-1.5 rounded-full bg-pink-50 text-[#e91e8c] text-sm font-medium mb-4">Who We Serve</span>
-              <h2 className="text-4xl sm:text-5xl font-bold text-[#0f1b2d] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              <h2 className="text-4xl sm:text-5xl font-bold text-[#4a7ba7] tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Young adults who have been{" "}
                 <span className="text-gradient">overlooked</span>.
               </h2>
@@ -250,7 +250,7 @@ export default function Home() {
                   <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-4 shadow-lg`}>
                     <item.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h4 className="font-bold text-[#0f1b2d] text-lg mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{item.title}</h4>
+                  <h4 className="font-bold text-[#4a7ba7] text-lg mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{item.title}</h4>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
                 </motion.div>
               </AnimatedSection>
@@ -260,7 +260,7 @@ export default function Home() {
       </section>
 
       {/* The Crisis - Bold statement section */}
-      <section className="w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#0f1b2d] relative overflow-hidden">
+      <section className="w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#4a7ba7] relative overflow-hidden">
         {/* Background decoration */}
         <motion.div
           animate={{ rotate: [0, 360] }}
@@ -323,7 +323,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <AnimatedSection>
             <span className="inline-block px-4 py-1.5 rounded-full bg-pink-50 text-[#e91e8c] text-sm font-medium mb-4">Join the Movement</span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#0f1b2d] tracking-tight mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#4a7ba7] tracking-tight mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
               Why <span className="text-gradient">You</span> Matter
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -332,14 +332,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/partnerships">
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                  <Button size="lg" className="bg-gradient-to-r from-[#0f1b2d] to-[#1e3a5f] hover:from-[#1a2d4a] hover:to-[#243b5c] text-white rounded-full px-8 shadow-lg shadow-blue-900/20 w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-to-r from-[#4a7ba7] to-[#7aabea] hover:from-[#5a8bc0] hover:to-[#6a9bd9] text-white rounded-full px-8 shadow-lg shadow-blue-900/20 w-full sm:w-auto">
                     Partner With Us <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </motion.div>
               </Link>
               <Link href="/contact">
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                  <Button size="lg" variant="outline" className="border-[#0f1b2d]/20 text-[#0f1b2d] hover:bg-[#0f1b2d] hover:text-white rounded-full px-8 w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="border-[#4a7ba7]/20 text-[#4a7ba7] hover:bg-[#4a7ba7] hover:text-white rounded-full px-8 w-full sm:w-auto">
                     Get in Touch
                   </Button>
                 </motion.div>
