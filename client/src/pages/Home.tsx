@@ -96,8 +96,7 @@ export default function Home() {
                   className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6"
                   style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                 >
-                  Steel Toes &{" "}
-                  <span className="text-gradient">Second Chances</span>
+                  Steel Toes
                 </motion.h1>
 
                 {/* Subtext */}
