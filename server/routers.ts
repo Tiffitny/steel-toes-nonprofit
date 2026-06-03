@@ -5,6 +5,7 @@ import { publicProcedure, router } from "./_core/trpc";
 import { z } from "zod";
 import { createContactInquiry } from "./db";
 import { notifyOwner } from "./_core/notification";
+import { sendContactInquiryEmail } from "./_core/email";
 import { donationRouter } from "./donation-router";
 
 export const appRouter = router({
@@ -46,7 +47,17 @@ export const appRouter = router({
             message: input.message,
           });
 
-          // Notify the owner about the new inquiry
+          // Send email notification to owner
+          await sendContactInquiryEmail({
+            name: input.name,
+            email: input.email,
+            phone: input.phone || null,
+            organization: input.organization || null,
+            inquiryType: input.inquiryType,
+            message: input.message,
+          }).catch(err => console.error("Failed to send contact inquiry email:", err));
+
+          // Also notify via Manus notification service as fallback
           await notifyOwner({
             title: `New ${input.inquiryType} inquiry from ${input.name}`,
             content: `Email: ${input.email}\nOrganization: ${input.organization || "N/A"}\nMessage: ${input.message}`,

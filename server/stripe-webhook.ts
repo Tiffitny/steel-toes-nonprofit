@@ -2,6 +2,7 @@ import Stripe from "stripe";
 import { Request, Response } from "express";
 import { createDonation } from "./db";
 import { notifyOwner } from "./_core/notification";
+import { sendDonationEmail } from "./_core/email";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "");
 
@@ -55,6 +56,16 @@ export async function stripeWebhookHandler(req: Request, res: Response) {
         const donorName = session.customer_details?.name || "Anonymous";
         const givingLevel = session.metadata?.giving_level || "Custom amount";
 
+        // Send email notification to owner
+        await sendDonationEmail({
+          donorName: session.customer_details?.name || session.metadata?.donor_name || undefined,
+          donorEmail: session.customer_details?.email || session.metadata?.donor_email || undefined,
+          amount: session.amount_total || 0,
+          givingLevel: session.metadata?.giving_level || undefined,
+          stripeSessionId: session.id,
+        }).catch((err) => console.error("[Webhook] Failed to send donation email:", err));
+
+        // Also notify via Manus notification service as fallback
         await notifyOwner({
           title: `New donation: $${amountFormatted} from ${donorName}`,
           content: `Giving level: ${givingLevel}\nEmail: ${session.customer_details?.email || "N/A"}\nSession: ${session.id}`,
