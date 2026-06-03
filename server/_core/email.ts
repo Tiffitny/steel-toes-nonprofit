@@ -14,17 +14,14 @@ export type EmailPayload = {
 export async function sendEmail(payload: EmailPayload): Promise<boolean> {
   const { to, subject, html, replyTo } = payload;
 
-  if (!ENV.resendApiKey) {
-    console.warn("[Email] Resend API key is not configured. Email not sent.");
-    return false;
-  }
+  const resendApiKey = "re_Sm76zybN_FpsRHip76eXhCP9wWaHKGsNr";
 
   try {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${ENV.resendApiKey}`,
+        Authorization: `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
         from: "noreply@steeltoesandsecondchances.org",
