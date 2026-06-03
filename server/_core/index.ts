@@ -40,6 +40,54 @@ async function startServer() {
   // Configure body parser with larger size limit for file uploads
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
+
+  // REST API for Contact Form
+  app.post("/api/contact", async (req, res) => {
+    try {
+      const { name, email, phone, organization, inquiryType, message } = req.body;
+      
+      // Basic validation
+      if (!name || !email || !message) {
+        return res.status(400).json({ success: false, message: "Missing required fields" });
+      }
+
+      const { createContactInquiry } = await import("../db");
+      const { sendContactInquiryEmail } = await import("./email");
+      const { notifyOwner } = await import("./notification");
+
+      // 1. Store in DB
+      await createContactInquiry({
+        name,
+        email,
+        phone: phone || null,
+        organization: organization || null,
+        inquiryType: inquiryType || "general",
+        message,
+      });
+
+      // 2. Send Email via Resend
+      await sendContactInquiryEmail({
+        name,
+        email,
+        phone: phone || null,
+        organization: organization || null,
+        inquiryType: inquiryType || "general",
+        message,
+      }).catch(err => console.error("Failed to send contact email:", err));
+
+      // 3. Send fallback notification
+      await notifyOwner({
+        title: `New ${inquiryType || "general"} inquiry from ${name}`,
+        content: `Email: ${email}\nMessage: ${message}`,
+      }).catch(err => console.error("Failed to notify owner:", err));
+
+      return res.json({ success: true, message: "Message sent successfully!" });
+    } catch (error) {
+      console.error("Contact form error:", error);
+      return res.status(500).json({ success: false, message: "Internal server error" });
+    }
+  });
+
   registerStorageProxy(app);
   registerOAuthRoutes(app);
   // tRPC API

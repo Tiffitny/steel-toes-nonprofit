@@ -41,31 +41,46 @@ export default function Contact() {
     message: "",
   });
 
-  const submitMutation = trpc.contact.submit.useMutation({
-    onSuccess: () => {
-      toast.success("Thank you! We received your message and will respond soon.");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        organization: "",
-        inquiryType: "general" as const,
-        message: "",
-      });
-    },
-    onError: (error) => {
-      toast.error(error.message || "Failed to submit. Please try again.");
-    },
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    submitMutation.mutate(formData);
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast.success("Thank you! We received your message and will respond soon.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          organization: "",
+          inquiryType: "general",
+          message: "",
+        });
+      } else {
+        throw new Error(data.message || "Failed to submit");
+      }
+    } catch (error: any) {
+      toast.error(error.message || "Failed to submit. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -226,10 +241,10 @@ export default function Contact() {
                   <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }}>
                     <Button
                       type="submit"
-                      disabled={submitMutation.isPending}
+                      disabled={isSubmitting}
                       className="w-full bg-gradient-to-r from-[#e91e8c] to-[#ff4db2] text-white rounded-full py-6 text-base font-medium shadow-lg shadow-pink-500/25 border-0"
                     >
-                      {submitMutation.isPending ? (
+                      {isSubmitting ? (
                         <>
                           <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Sending...
                         </>
